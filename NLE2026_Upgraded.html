@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NLE 2026 — Philippine Nursing Licensure Exam Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --navy: #0a2342;
+  --navy-mid: #163a5f;
+  --blue: #1a6fa3;
+  --blue-light: #e8f4fd;
+  --teal: #0d9373;
+  --teal-light: #e4f5f0;
+  --gold: #c8860a;
+  --gold-light: #fdf3e3;
+  --red: #c0392b;
+  --red-light: #fdecea;
+  --white: #fff;
+  --bg: #f8f9fb;
+  --surface: #fff;
+  --border: #e2e8f0;
+  --text: #1a2535;
+  --muted: #64748b;
+  --radius: 12px;
+  --radius-sm: 7px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6;}
+
+/* NAV */
+nav{background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:56px;position:sticky;top:0;z-index:200;box-shadow:0 2px 16px rgba(0,0,0,0.22);}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;color:#fff;white-space:nowrap;}
+.nav-logo span{color:#7ec8f4;}
+.nav-links{display:flex;gap:2px;flex-wrap:wrap;}
+.nav-links button{background:transparent;border:none;color:rgba(255,255,255,0.72);font-family:'DM Sans',sans-serif;font-size:12.5px;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all 0.15s;white-space:nowrap;}
+.nav-links button:hover,.nav-links button.active{background:rgba(255,255,255,0.13);color:#fff;}
+
+/* PAGES */
+.page{display:none;max-width:920px;margin:0 auto;padding:2rem 1.5rem 4rem;}
+.page.visible{display:block;}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 55%,#1a6fa3 100%);border-radius:var(--radius);padding:2.5rem 2.5rem 2rem;color:#fff;margin-bottom:1.5rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;right:-40px;top:-40px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,0.04);pointer-events:none;}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:20px;padding:4px 14px;font-size:12px;letter-spacing:0.6px;margin-bottom:1rem;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;line-height:1.2;margin-bottom:10px;}
+.hero p{font-size:14px;opacity:0.85;max-width:520px;margin-bottom:1.5rem;}
+.hero-stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.2rem;}
+.stat-box{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);border-radius:var(--radius-sm);padding:10px 16px;}
+.stat-box .sv{font-size:20px;font-weight:600;}
+.stat-box .sl{font-size:11px;opacity:0.75;margin-top:1px;}
+
+/* BUTTONS */
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;border:none;border-radius:var(--radius-sm);padding:10px 20px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:background 0.15s;}
+.btn-primary:hover{background:#135b88;}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--blue);border:1.5px solid var(--blue);border-radius:var(--radius-sm);padding:9px 18px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:all 0.15s;}
+.btn-outline:hover{background:var(--blue-light);}
+.btn-teal{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:#fff;border:none;border-radius:var(--radius-sm);padding:10px 20px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:background 0.15s;}
+.btn-teal:hover{background:#0a7a5f;}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#fff;border:none;border-radius:var(--radius-sm);padding:10px 20px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:background 0.15s;}
+.btn-gold:hover{background:#a06e08;}
+
+/* CARDS */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.25rem;}
+.card-title{font-size:16px;font-weight:600;margin-bottom:1rem;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+
+/* SECTION HEADERS */
+.section-tag{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+h2.page-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;margin-bottom:4px;}
+.page-subtitle{font-size:14px;color:var(--muted);margin-bottom:1.5rem;}
+
+/* BADGES */
+.badge{display:inline-block;font-size:11px;padding:3px 10px;border-radius:12px;font-weight:500;}
+.badge-blue{background:var(--blue-light);color:var(--blue);}
+.badge-green{background:var(--teal-light);color:var(--teal);}
+.badge-amber{background:var(--gold-light);color:var(--gold);}
+.badge-red{background:var(--red-light);color:var(--red);}
+
+/* COUNTDOWN */
+.countdown-section{background:var(--navy);color:#fff;border-radius:var(--radius);padding:1.4rem 2rem;display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;gap:1rem;flex-wrap:wrap;}
+.countdown-section h3{font-family:'Cormorant Garamond',serif;font-size:20px;margin-bottom:3px;}
+.countdown-section p{font-size:12px;opacity:0.7;}
+.cd-nums{display:flex;gap:10px;}
+.cd-unit{background:rgba(255,255,255,0.1);border-radius:8px;padding:8px 12px;text-align:center;min-width:54px;}
+.cd-unit .cn{font-size:22px;font-weight:600;}
+.cd-unit .cl{font-size:10px;opacity:0.6;margin-top:1px;}
+
+/* SCORE HISTORY */
+.score-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.score-row:last-child{border-bottom:none;}
+.score-badge{min-width:46px;text-align:center;font-weight:500;padding:4px 8px;border-radius:6px;}
+
+/* SUBJECT PICKER */
+.subj-picker{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.2rem;}
+.spill{background:var(--surface);border:1.5px solid var(--border);border-radius:20px;padding:6px 14px;font-size:12px;cursor:pointer;transition:all 0.15s;color:var(--muted);font-family:'DM Sans',sans-serif;}
+.spill:hover{border-color:var(--blue);color:var(--blue);}
+.spill.active{background:var(--blue);border-color:var(--blue);color:#fff;}
+
+/* QUIZ */
+.q-progress{margin-bottom:1.5rem;}
+.qp-bar{height:6px;background:var(--border);border-radius:3px;margin-top:6px;}
+.qp-fill{height:6px;background:var(--blue);border-radius:3px;transition:width 0.3s;}
+.q-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-size:13px;color:var(--muted);}
+.q-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem;margin-bottom:1rem;}
+.q-subject-tag{display:inline-block;font-size:11px;font-weight:500;padding:3px 10px;border-radius:12px;margin-bottom:14px;background:var(--blue-light);color:var(--blue);}
+.q-text{font-size:16px;line-height:1.65;margin-bottom:1.5rem;font-weight:400;}
+.q-options{display:flex;flex-direction:column;gap:10px;}
+.q-opt{display:flex;align-items:flex-start;gap:12px;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:12px 16px;cursor:pointer;transition:all 0.15s;font-size:14px;}
+.q-opt:hover{border-color:var(--blue);background:var(--blue-light);}
+.q-opt.selected{border-color:var(--blue);background:var(--blue-light);}
+.q-opt.correct{border-color:var(--teal);background:var(--teal-light);}
+.q-opt.wrong{border-color:var(--red);background:var(--red-light);}
+.q-opt .ol{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--border);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;margin-top:1px;}
+.q-opt.selected .ol{border-color:var(--blue);color:var(--blue);}
+.q-opt.correct .ol{border-color:var(--teal);background:var(--teal);color:#fff;}
+.q-opt.wrong .ol{border-color:var(--red);background:var(--red);color:#fff;}
+.q-explanation{background:var(--teal-light);border-left:3px solid var(--teal);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:12px 16px;font-size:13px;margin-top:1rem;display:none;line-height:1.6;}
+.q-explanation.show{display:block;}
+.q-actions{display:flex;justify-content:space-between;align-items:center;margin-top:1rem;}
+.result-circle{width:120px;height:120px;border-radius:50%;border:5px solid var(--blue);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 1.5rem;}
+.result-circle .rv{font-size:28px;font-weight:600;color:var(--blue);}
+.result-circle .rl{font-size:12px;color:var(--muted);}
+
+/* TABS INSIDE PAGES */
+.tab-bar{display:flex;gap:4px;margin-bottom:1.5rem;border-bottom:2px solid var(--border);padding-bottom:0;}
+.tab-btn{background:transparent;border:none;font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:500;color:var(--muted);padding:10px 16px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all 0.15s;}
+.tab-btn:hover{color:var(--blue);}
+.tab-btn.active{color:var(--blue);border-bottom-color:var(--blue);}
+.tab-content{display:none;}
+.tab-content.active{display:block;}
+
+/* FLASHCARDS */
+.fc-scene{width:100%;height:200px;perspective:1000px;cursor:pointer;margin-bottom:16px;}
+.fc-card{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform 0.5s;}
+.fc-card.flipped{transform:rotateY(180deg);}
+.fc-front,.fc-back{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;padding:1.5rem;text-align:center;}
+.fc-front{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);color:#fff;border:1px solid rgba(255,255,255,0.1);}
+.fc-back{background:var(--teal-light);border:2px solid var(--teal);transform:rotateY(180deg);}
+.fc-front .fc-subject{font-size:11px;opacity:0.6;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;}
+.fc-front .fc-question{font-size:16px;font-weight:500;line-height:1.5;}
+.fc-back .fc-answer{font-size:15px;color:var(--text);line-height:1.6;}
+.fc-hint{font-size:11px;opacity:0.5;margin-top:8px;}
+.fc-nav{display:flex;align-items:center;justify-content:space-between;margin-top:8px;}
+.fc-counter{font-size:13px;color:var(--muted);}
+.fc-progress-bar{height:4px;background:var(--border);border-radius:2px;margin:8px 0 16px;}
+.fc-progress-fill{height:4px;background:var(--teal);border-radius:2px;transition:width 0.3s;}
+
+/* MOCK EXAM */
+.mock-header{background:var(--navy);color:#fff;border-radius:var(--radius);padding:1.2rem 1.5rem;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.mock-timer{font-size:22px;font-weight:600;font-family:monospace;color:#7ec8f4;}
+.mock-subject-label{font-size:12px;opacity:0.7;}
+.mock-progress-text{font-size:13px;}
+
+/* TIPS PAGE */
+.tip-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.3rem;margin-bottom:10px;display:flex;gap:14px;}
+.tip-icon{font-size:22px;flex-shrink:0;}
+.tip-title{font-size:14px;font-weight:600;margin-bottom:4px;}
+.tip-text{font-size:13px;color:var(--muted);line-height:1.6;}
+.mnem-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;margin-bottom:10px;}
+.mnem-title{font-weight:600;font-size:14px;margin-bottom:4px;}
+.mnem-tag{font-size:11px;background:var(--gold-light);color:var(--gold);padding:2px 8px;border-radius:10px;margin-left:8px;}
+.mnem-body{font-size:13px;color:var(--muted);line-height:1.6;}
+.mnem-body strong{color:var(--text);}
+.quote-card{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);color:#fff;border-radius:var(--radius);padding:1.5rem;margin-bottom:10px;position:relative;}
+.quote-card .quote-text{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;line-height:1.5;margin-bottom:8px;}
+.quote-card .quote-author{font-size:12px;opacity:0.65;}
+.formula-box{background:var(--navy);color:#fff;border-radius:var(--radius-sm);padding:10px 16px;font-family:monospace;font-size:14px;margin:8px 0 4px;letter-spacing:0.3px;}
+
+/* EXAM INFO */
+.tl-item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--border);}
+.tl-item:last-child{border-bottom:none;}
+.tl-dot{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;margin-top:2px;}
+.tl-dot.done{background:var(--teal-light);}
+.tl-dot.now{background:var(--blue-light);border:2px solid var(--blue);}
+.tl-dot.upcoming{background:var(--bg);border:2px solid var(--border);}
+.tl-title{font-size:14px;font-weight:500;}
+.tl-date{font-size:12px;color:var(--muted);margin-bottom:3px;}
+.tl-desc{font-size:12px;color:var(--muted);margin-top:3px;}
+.req-table{width:100%;font-size:13px;border-collapse:collapse;}
+.req-table th{text-align:left;padding:9px 12px;background:var(--bg);font-weight:500;font-size:12px;color:var(--muted);border-bottom:1px solid var(--border);}
+.req-table td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
+.req-table tr:last-child td{border-bottom:none;}
+
+/* MOTIVATION BANNER */
+.motivate-banner{background:linear-gradient(135deg,#0d9373,#0a7a5f);color:#fff;border-radius:var(--radius);padding:1.2rem 1.5rem;margin-bottom:1rem;text-align:center;}
+.motivate-banner .mb-quote{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;margin-bottom:4px;}
+.motivate-banner .mb-author{font-size:11px;opacity:0.75;}
+
+/* SUBJECT CARDS */
+.subject-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-bottom:1.5rem;}
+.subj-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem;cursor:pointer;transition:all 0.15s;}
+.subj-card:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 4px 16px rgba(26,111,163,0.12);}
+.subj-card .si{font-size:26px;margin-bottom:8px;}
+.subj-card .sn{font-size:13px;font-weight:500;margin-bottom:3px;}
+.subj-card .sq{font-size:11px;color:var(--muted);}
+.subj-card .sb{height:4px;background:var(--border);border-radius:2px;margin-top:10px;}
+.subj-card .sf{height:4px;border-radius:2px;}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:500;align-items:center;justify-content:center;}
+.modal-overlay.open{display:flex;}
+.modal{background:#fff;border-radius:var(--radius);padding:2rem;max-width:480px;width:90%;max-height:85vh;overflow-y:auto;}
+.modal h3{font-family:'Cormorant Garamond',serif;font-size:24px;margin-bottom:1rem;}
+.modal-close{float:right;background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted);}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:3px;}
+
+@media(max-width:640px){
+  nav{padding:0 0.8rem;}
+  .nav-links button{padding:4px 7px;font-size:11px;}
+  .hero{padding:1.8rem 1.2rem;}
+  .hero h1{font-size:26px;}
+  .grid2,.grid3{grid-template-columns:1fr;}
+  .cd-nums{gap:6px;}
+  .cd-unit{min-width:46px;padding:7px 10px;}
+  .cd-unit .cn{font-size:18px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">NLE <span>2026</span></div>
+  <div class="nav-links">
+    <button class="active" onclick="showPage('home',this)">🏠 Home</button>
+    <button onclick="showPage('quiz',this)">📝 Practice Quiz</button>
+    <button onclick="showPage('mock',this)">🎓 Mock Exam</button>
+    <button onclick="showPage('flashcards',this)">🃏 Flashcards</button>
+    <button onclick="showPage('subjects',this)">📚 Subjects</button>
+    <button onclick="showPage('tips',this)">💡 Tips & Guides</button>
+    <button onclick="showPage('exam-info',this)">ℹ️ Exam Info</button>
+  </div>
+</nav>
+
+<!-- ===== HOME PAGE ===== -->
+<div id="home" class="page visible">
+  <div class="hero">
+    <div class="hero-badge">🇵🇭 Philippine Nursing Licensure Exam 2026</div>
+    <h1>Pass the PNLE 2026 💉</h1>
+    <p>Your complete review companion — 700+ practice questions, real mock exams, interactive flashcards, mnemonics, and everything you need to earn your RN license.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:1.2rem;">
+      <button class="btn-primary" onclick="showPage('quiz',document.querySelectorAll('.nav-links button')[1])">▶ Start Practice Quiz</button>
+      <button class="btn-teal" onclick="showPage('mock',document.querySelectorAll('.nav-links button')[2])">🎓 Full Mock Exam</button>
+      <button class="btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.4)" onclick="showPage('flashcards',document.querySelectorAll('.nav-links button')[3])">🃏 Flashcards</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><div class="sv">700+</div><div class="sl">Practice Questions</div></div>
+      <div class="stat-box"><div class="sv">6</div><div class="sl">Major Subjects</div></div>
+      <div class="stat-box"><div class="sv">510</div><div class="sl">Mock Exam Items</div></div>
+      <div class="stat-box"><div class="sv">300+</div><div class="sl">Flashcards</div></div>
+      <div class="stat-box"><div class="sv">75%</div><div class="sl">Passing Score</div></div>
+    </div>
+  </div>
+
+  <!-- Countdown -->
+  <div class="countdown-section">
+    <div>
+      <h3>📅 PNLE August 2026 — Day 1</h3>
+      <p>August 29, 2026 · Stay updated via prc.gov.ph</p>
+    </div>
+    <div class="cd-nums" id="countdown-display">
+      <div class="cd-unit"><div class="cn" id="cd-days">--</div><div class="cl">Days</div></div>
+      <div class="cd-unit"><div class="cn" id="cd-hours">--</div><div class="cl">Hours</div></div>
+      <div class="cd-unit"><div class="cn" id="cd-mins">--</div><div class="cl">Mins</div></div>
+      <div class="cd-unit"><div class="cn" id="cd-secs">--</div><div class="cl">Secs</div></div>
+    </div>
+  </div>
+
+  <div id="daily-motivation" class="motivate-banner"></div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="section-tag">Your Progress</div>
+      <div id="progress-summary">
+        <p style="color:var(--muted);font-size:13px">No quizzes taken yet. <a href="#" onclick="showPage('quiz',document.querySelectorAll('.nav-links button')[1]);return false;" style="color:var(--blue)">Start your first quiz →</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="section-tag">Quick Launch</div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <button class="btn-primary" style="width:100%;justify-content:center" onclick="showPage('quiz',document.querySelectorAll('.nav-links button')[1])">📝 Practice Quiz (Any Subject)</button>
+        <button class="btn-teal" style="width:100%;justify-content:center" onclick="showPage('mock',document.querySelectorAll('.nav-links button')[2])">🎓 Start Full Mock Exam</button>
+        <button class="btn-outline" style="width:100%;justify-content:center" onclick="showPage('flashcards',document.querySelectorAll('.nav-links button')[3])">🃏 Review Flashcards</button>
+        <button class="btn-gold" style="width:100%;justify-content:center" onclick="showPage('tips',document.querySelectorAll('.nav-links button')[5])">💡 Study Tips & Mnemonics</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-tag">Recent Quiz Scores</div>
+    <div id="score-history-list"><p style="font-size:13px;color:var(--muted)">Your quiz history will appear here after you complete a quiz.</p></div>
+  </div>
+</div>
+
+<!-- ===== PRACTICE QUIZ PAGE ===== -->
+<div id="quiz" class="page">
+  <h2 class="page-title">📝 Practice Quiz</h2>
+  <p class="page-subtitle">Choose a subject and number of questions. Immediate feedback after each answer.</p>
+
+  <div id="quiz-setup" class="card">
+    <div class="section-tag">Quiz Settings</div>
+    <div class="subj-picker" id="subj-picker">
+      <button class="spill active" onclick="setSubj('All',this)">All Subjects</button>
+      <button class="spill" onclick="setSubj('Fundamentals',this)">Fundamentals</button>
+      <button class="spill" onclick="setSubj('Medical-Surgical',this)">Medical-Surgical</button>
+      <button class="spill" onclick="setSubj('Maternal',this)">Maternal & Child</button>
+      <button class="spill" onclick="setSubj('Psychiatric',this)">Psychiatric</button>
+      <button class="spill" onclick="setSubj('Community',this)">Community Health</button>
+      <button class="spill" onclick="setSubj('Leadership',this)">Leadership</button>
+    </div>
+    <div style="display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;">
+      <div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Number of Questions</div>
+        <select id="q-count" style="padding:8px 14px;border:1px solid var(--border);border-radius:6px;font-family:'DM Sans',sans-serif;font-size:13px;background:var(--surface);">
+          <option value="10">10 Questions</option>
+          <option value="20" selected>20 Questions</option>
+          <option value="30">30 Questions</option>
+          <option value="50">50 Questions</option>
+          <option value="100">100 Questions</option>
+        </select>
+      </div>
+      <button class="btn-primary" onclick="beginQuiz()">▶ Start Quiz</button>
+    </div>
+  </div>
+
+  <div class="card" id="score-history-card">
+    <div class="section-tag">Recent Quiz Scores</div>
+    <div id="quiz-score-history"><p style="font-size:13px;color:var(--muted)">Complete a quiz to see your history.</p></div>
+  </div>
+
+  <div id="quiz-active" style="display:none;">
+    <div style="max-width:700px;margin:0 auto;">
+      <div class="q-progress">
+        <div class="q-header"><span id="q-counter">Question 1 of 20</span><span id="q-score-live" style="font-weight:500;color:var(--teal)"></span></div>
+        <div class="qp-bar"><div class="qp-fill" id="qp-fill" style="width:5%"></div></div>
+      </div>
+      <div class="q-box">
+        <span class="q-subject-tag" id="q-tag"></span>
+        <div class="q-text" id="q-text"></div>
+        <div class="q-options" id="q-opts"></div>
+        <div class="q-explanation" id="q-expl"></div>
+      </div>
+      <div class="q-actions">
+        <button class="btn-outline" id="q-skip" onclick="skipQuestion()">Skip →</button>
+        <button class="btn-primary" id="q-next" onclick="nextQuestion()" style="display:none;">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="quiz-result" style="display:none;">
+    <div class="card" style="text-align:center;padding:2.5rem;">
+      <div class="result-circle" id="r-circle">
+        <div class="rv" id="r-score">--</div><div class="rl">Score</div>
+      </div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;margin-bottom:8px;" id="r-msg"></h3>
+      <p style="font-size:14px;color:var(--muted);margin-bottom:1.5rem;" id="r-detail"></p>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+        <button class="btn-primary" onclick="retryQuiz()">🔄 Retry Quiz</button>
+        <button class="btn-outline" onclick="showPage('quiz',document.querySelectorAll('.nav-links button')[1]);resetQuiz()">New Quiz</button>
+      </div>
+    </div>
+    <div class="card" style="margin-top:1rem;">
+      <div class="section-tag">Review Missed Questions</div>
+      <div id="r-wrong-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MOCK EXAM PAGE ===== -->
+<div id="mock" class="page">
+  <h2 class="page-title">🎓 Full Mock Exam</h2>
+  <p class="page-subtitle">Real PNLE format — 510 items, 6 subjects, timed (2 hours per subject). Simulates the actual board exam experience.</p>
+
+  <div id="mock-setup" class="card">
+    <div class="section-tag">Mock Exam Format</div>
+    <table class="req-table" style="margin-bottom:1.2rem;">
+      <thead><tr><th>Subject</th><th>Day</th><th>Items</th><th>Time</th></tr></thead>
+      <tbody>
+        <tr><td>Fundamentals of Nursing</td><td><span class="badge badge-blue">Day 1</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Community Health + Maternal & Child</td><td><span class="badge badge-blue">Day 1</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Medical-Surgical Nursing 1</td><td><span class="badge badge-blue">Day 1</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Medical-Surgical Nursing 2</td><td><span class="badge badge-green">Day 2</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Psychiatric Nursing</td><td><span class="badge badge-green">Day 2</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Leadership, Management & Jurisprudence</td><td><span class="badge badge-green">Day 2</span></td><td>85 items</td><td>2 hrs</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:1.2rem;">⚠️ Total: 510 items. Passing = 75% average with no subject below 60%. You may take one subject at a time.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <button class="btn-primary" onclick="startMockExam('full')">▶ Start Full 510-Item Exam</button>
+      <button class="btn-outline" onclick="startMockExam('day1')">Day 1 Only (255 items)</button>
+      <button class="btn-outline" onclick="startMockExam('day2')">Day 2 Only (255 items)</button>
+    </div>
+  </div>
+
+  <div id="mock-active" style="display:none;">
+    <div class="mock-header">
+      <div>
+        <div class="mock-subject-label" id="mock-subj-label">Subject</div>
+        <div class="mock-progress-text" id="mock-progress-text">Item 1 of 85</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:11px;opacity:0.7;margin-bottom:2px;">Time Remaining</div>
+        <div class="mock-timer" id="mock-timer">2:00:00</div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-size:11px;opacity:0.7;margin-bottom:4px;">Progress</div>
+        <button class="btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.3);font-size:12px;padding:6px 12px;" onclick="confirmEndMock()">End Exam</button>
+      </div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div class="qp-bar"><div class="qp-fill" id="mock-qp-fill" style="width:0%"></div></div>
+    </div>
+    <div style="max-width:700px;margin:0 auto;">
+      <div class="q-box">
+        <span class="q-subject-tag" id="mock-q-tag"></span>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:8px;" id="mock-item-num"></div>
+        <div class="q-text" id="mock-q-text"></div>
+        <div class="q-options" id="mock-q-opts"></div>
+        <div class="q-explanation" id="mock-q-expl"></div>
+      </div>
+      <div class="q-actions">
+        <button class="btn-outline" id="mock-prev" onclick="mockPrev()" style="display:none;">← Prev</button>
+        <button class="btn-primary" id="mock-next" onclick="mockNext()">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mock-result" style="display:none;">
+    <div class="card" style="text-align:center;padding:2rem;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;margin-bottom:1rem;">🎓 Mock Exam Results</h3>
+      <div id="mock-result-content"></div>
+      <div style="margin-top:1.5rem;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+        <button class="btn-primary" onclick="document.getElementById('mock-setup').style.display='block';document.getElementById('mock-result').style.display='none';">New Mock Exam</button>
+        <button class="btn-outline" onclick="showPage('quiz',document.querySelectorAll('.nav-links button')[1])">Practice Quiz</button>
+      </div>
+    </div>
+    <div class="card" id="mock-breakdown"></div>
+  </div>
+</div>
+
+<!-- ===== FLASHCARDS PAGE ===== -->
+<div id="flashcards" class="page">
+  <h2 class="page-title">🃏 Flashcard Reviewer</h2>
+  <p class="page-subtitle">300+ flashcards covering key concepts, terms, and clinical facts. Tap a card to flip it!</p>
+
+  <div class="card" style="margin-bottom:1rem;">
+    <div class="subj-picker" id="fc-subj-picker">
+      <button class="spill active" onclick="setFcSubj('All',this)">All Subjects</button>
+      <button class="spill" onclick="setFcSubj('Fundamentals',this)">Fundamentals</button>
+      <button class="spill" onclick="setFcSubj('Medical-Surgical',this)">Med-Surg</button>
+      <button class="spill" onclick="setFcSubj('Maternal',this)">Maternal & Child</button>
+      <button class="spill" onclick="setFcSubj('Psychiatric',this)">Psychiatric</button>
+      <button class="spill" onclick="setFcSubj('Community',this)">Community</button>
+      <button class="spill" onclick="setFcSubj('Leadership',this)">Leadership</button>
+    </div>
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="setFcMode('flip',this)">🔄 Flip Cards</button>
+      <button class="tab-btn" onclick="setFcMode('qa',this)">❓ Q&A Mode</button>
+    </div>
+  </div>
+
+  <div id="fc-flip-mode">
+    <div class="fc-progress-bar"><div class="fc-progress-fill" id="fc-progress-fill" style="width:0%"></div></div>
+    <div class="fc-scene" id="fc-scene" onclick="flipCard()">
+      <div class="fc-card" id="fc-card">
+        <div class="fc-front">
+          <div>
+            <div class="fc-subject" id="fc-front-subject"></div>
+            <div class="fc-question" id="fc-front-q"></div>
+            <div class="fc-hint">👆 Tap to reveal answer</div>
+          </div>
+        </div>
+        <div class="fc-back">
+          <div class="fc-answer" id="fc-back-a"></div>
+        </div>
+      </div>
+    </div>
+    <div class="fc-nav">
+      <button class="btn-outline" onclick="fcPrev()">← Previous</button>
+      <div class="fc-counter" id="fc-counter">1 / --</div>
+      <button class="btn-primary" onclick="fcNext()">Next →</button>
+    </div>
+    <div style="text-align:center;margin-top:12px;">
+      <button class="btn-teal" onclick="shuffleFlashcards()" style="font-size:12px;padding:7px 14px;">🔀 Shuffle Cards</button>
+    </div>
+  </div>
+
+  <div id="fc-qa-mode" style="display:none;">
+    <div class="fc-progress-bar"><div class="fc-progress-fill" id="fc-qa-progress-fill" style="width:0%"></div></div>
+    <div class="q-box" style="margin-bottom:1rem;">
+      <span class="q-subject-tag" id="fc-qa-subject"></span>
+      <div class="q-text" id="fc-qa-q" style="margin-bottom:1rem;"></div>
+      <button class="btn-outline" onclick="revealFcAnswer()" id="fc-reveal-btn">👁 Reveal Answer</button>
+      <div id="fc-qa-answer" style="display:none;background:var(--teal-light);border-left:3px solid var(--teal);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:12px 16px;font-size:14px;margin-top:1rem;line-height:1.6;"></div>
+    </div>
+    <div class="fc-nav">
+      <button class="btn-outline" onclick="fcQaPrev()">← Previous</button>
+      <div class="fc-counter" id="fc-qa-counter">1 / --</div>
+      <button class="btn-primary" onclick="fcQaNext()">Next →</button>
+    </div>
+    <div style="text-align:center;margin-top:12px;">
+      <button class="btn-teal" onclick="shuffleFlashcards()" style="font-size:12px;padding:7px 14px;">🔀 Shuffle Cards</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SUBJECTS PAGE ===== -->
+<div id="subjects" class="page">
+  <h2 class="page-title">📚 Subjects & Key Topics</h2>
+  <p class="page-subtitle">Review the major NLE subjects and key concepts for each area.</p>
+
+  <div class="card">
+    <div class="card-title">📋 PNLE 2026 Exam Structure</div>
+    <table class="req-table">
+      <thead><tr><th>Subject</th><th>Day</th><th>Items</th><th>Time</th></tr></thead>
+      <tbody>
+        <tr><td>Fundamentals of Nursing</td><td><span class="badge badge-blue">Day 1</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Community Health Nursing + Care of Mother & Child</td><td><span class="badge badge-blue">Day 1</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Medical-Surgical Nursing 1 (Systems A)</td><td><span class="badge badge-blue">Day 1</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Medical-Surgical Nursing 2 (Systems B)</td><td><span class="badge badge-green">Day 2</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Psychiatric Nursing</td><td><span class="badge badge-green">Day 2</span></td><td>85 items</td><td>2 hrs</td></tr>
+        <tr><td>Leadership, Management & Nursing Jurisprudence</td><td><span class="badge badge-green">Day 2</span></td><td>85 items</td><td>2 hrs</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:12px;color:var(--muted);margin-top:10px;">Total: 510 items over 2 days. Passing = 75% average with no subject below 60%.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🏥 Fundamentals of Nursing</div>
+    <div class="grid2">
+      <div>
+        <p style="font-size:13px;font-weight:600;margin-bottom:8px;color:var(--blue);">Nursing Process (ADPIE)</p>
+        <ul style="font-size:13px;color:var(--muted);padding-left:18px;line-height:1.9;">
+          <li>Assessment — subjective vs objective data</li>
+          <li>Diagnosis — NANDA format, PES</li>
+          <li>Planning — goals, outcomes, priorities</li>
+          <li>Implementation — independent vs dependent</li>
+          <li>Evaluation — reassessment, goal met/unmet</li>
+        </ul>
+      </div>
+      <div>
+        <p style="font-size:13px;font-weight:600;margin-bottom:8px;color:var(--blue);">Clinical Skills</p>
+        <ul style="font-size:13px;color:var(--muted);padding-left:18px;line-height:1.9;">
+          <li>Vital signs & normal ranges</li>
+          <li>Wound care, asepsis, sterile technique</li>
+          <li>Medication administration (9 Rights)</li>
+          <li>IV therapy & fluid balance</li>
+          <li>Documentation & reporting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="formula-box">Dosage: D/H × V = X &nbsp;|&nbsp; IV Rate: Volume(mL) ÷ Time(hrs) = mL/hr &nbsp;|&nbsp; Drip Rate: (Vol × Drop Factor) ÷ Time(min)</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🩺 Medical-Surgical Nursing</div>
+    <div class="grid3">
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;">Cardiovascular</p><ul style="color:var(--muted);padding-left:16px;line-height:1.8;"><li>MI — MONA therapy</li><li>Heart failure types</li><li>Hypertension stages</li><li>ECG basics</li></ul></div>
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;">Respiratory</p><ul style="color:var(--muted);padding-left:16px;line-height:1.8;"><li>ABG interpretation</li><li>COPD vs Asthma</li><li>Pneumonia types</li><li>TB — DOT therapy</li></ul></div>
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;">Neurological</p><ul style="color:var(--muted);padding-left:16px;line-height:1.8;"><li>GCS scale (3–15)</li><li>Stroke — FAST</li><li>ICP signs & care</li><li>Seizure precautions</li></ul></div>
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;">Endocrine</p><ul style="color:var(--muted);padding-left:16px;line-height:1.8;"><li>DM Type 1 vs 2</li><li>Hypo/Hyperglycemia S&S</li><li>Thyroid disorders</li><li>Cushing's vs Addison's</li></ul></div>
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;">Renal/GI</p><ul style="color:var(--muted);padding-left:16px;line-height:1.8;"><li>CKD stages & diet</li><li>Dialysis types</li><li>Liver cirrhosis</li><li>Colostomy care</li></ul></div>
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;">Musculoskeletal</p><ul style="color:var(--muted);padding-left:16px;line-height:1.8;"><li>Fracture types & care</li><li>Compartment syndrome</li><li>Hip replacement</li><li>Traction care</li></ul></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🤱 Maternal & Child Health Nursing</div>
+    <div class="grid2">
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;color:var(--blue);">OB Nursing</p><ul style="color:var(--muted);padding-left:16px;line-height:1.9;"><li>Nagele's Rule for EDC</li><li>Leopold's Maneuvers</li><li>4 Stages of Labor</li><li>APGAR scoring (0–10)</li><li>Postpartum hemorrhage</li><li>Eclampsia management</li></ul></div>
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;color:var(--blue);">Pediatric Nursing</p><ul style="color:var(--muted);padding-left:16px;line-height:1.9;"><li>Growth & development milestones</li><li>Immunization schedule (EPI)</li><li>Pediatric vital signs ranges</li><li>Communicable diseases</li><li>Cleft lip/palate care</li><li>Febrile seizure management</li></ul></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🧠 Psychiatric Nursing</div>
+    <div class="grid2">
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;color:var(--blue);">Defense Mechanisms</p><ul style="color:var(--muted);padding-left:16px;line-height:1.9;"><li>Repression, Denial, Projection</li><li>Rationalization, Reaction Formation</li><li>Displacement, Sublimation</li><li>Regression, Undoing</li></ul></div>
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;color:var(--blue);">Major Disorders</p><ul style="color:var(--muted);padding-left:16px;line-height:1.9;"><li>Schizophrenia — positive/negative</li><li>Bipolar I vs II</li><li>Major Depression — Beck's triad</li><li>Anxiety disorders — GAD, PTSD, OCD</li><li>Personality disorders — Cluster A/B/C</li></ul></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🌍 Community Health Nursing</div>
+    <div class="grid2">
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;color:var(--blue);">Key Programs</p><ul style="color:var(--muted);padding-left:16px;line-height:1.9;"><li>Expanded Program on Immunization (EPI)</li><li>IMCI — Integrated Management</li><li>Family Planning Methods</li><li>Sentrong Sigla Movement</li><li>Philippine Health Agenda</li></ul></div>
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;color:var(--blue);">Epidemiology</p><ul style="color:var(--muted);padding-left:16px;line-height:1.9;"><li>Levels of Prevention (1°/2°/3°)</li><li>Chain of Infection</li><li>Epidemiologic Triad</li><li>Rates: Incidence, Prevalence, CFR</li></ul></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">👩‍💼 Leadership, Management & Nursing Jurisprudence</div>
+    <div class="grid2">
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;color:var(--blue);">Management</p><ul style="color:var(--muted);padding-left:16px;line-height:1.9;"><li>POSDCORB functions</li><li>Leadership styles</li><li>Staffing & scheduling</li><li>Conflict resolution</li><li>Quality improvement (PI/QA)</li></ul></div>
+      <div style="font-size:13px;"><p style="font-weight:600;margin-bottom:6px;color:var(--blue);">Jurisprudence</p><ul style="color:var(--muted);padding-left:16px;line-height:1.9;"><li>RA 9173 — Philippine Nursing Act</li><li>PRC & Board of Nursing</li><li>Scope of Nursing Practice</li><li>Informed Consent & Patient Rights</li><li>Code of Ethics for Nurses</li></ul></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TIPS & GUIDES PAGE ===== -->
+<div id="tips" class="page">
+  <h2 class="page-title">💡 Tips, Mnemonics & Motivation</h2>
+  <p class="page-subtitle">Study smarter. Remember more. Pass with confidence.</p>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTipTab('study',this)">📅 Study Strategies</button>
+    <button class="tab-btn" onclick="showTipTab('mnemonics',this)">🧠 Mnemonics</button>
+    <button class="tab-btn" onclick="showTipTab('motivation',this)">✨ Motivation</button>
+  </div>
+
+  <!-- STUDY STRATEGIES TAB -->
+  <div id="tip-study" class="tab-content active">
+    <div class="tip-card"><div class="tip-icon">📅</div><div><div class="tip-title">Create a Study Schedule</div><div class="tip-text">Divide your review into 12–16 weeks. Allocate 2–3 days per subject, with weekends for full mock exams and weak-area review. Consistency beats cramming.</div></div></div>
+    <div class="tip-card"><div class="tip-icon">🎯</div><div><div class="tip-title">Focus on High-Yield Topics</div><div class="tip-text">Med-Surg accounts for the largest portion of NLE questions. Prioritize cardiovascular, respiratory, and neurological nursing. Mastering these three alone can significantly boost your score.</div></div></div>
+    <div class="tip-card"><div class="tip-icon">📖</div><div><div class="tip-title">Active Recall Over Passive Reading</div><div class="tip-text">Don't just re-read notes. Test yourself constantly. Use the flashcards and quizzes here. Active recall doubles retention compared to highlighting.</div></div></div>
+    <div class="tip-card"><div class="tip-icon">📊</div><div><div class="tip-title">Track Your Weak Areas</div><div class="tip-text">After each quiz, note which subjects you scored below 70%. Dedicate extra study time there. The NLE requires no subject below 60% — don't neglect any area.</div></div></div>
+    <div class="tip-card"><div class="tip-icon">💤</div><div><div class="tip-title">Prioritize Sleep During Review</div><div class="tip-text">Sleep consolidates memory. Aim for 7–8 hours nightly. The week before the exam, reduce new material and focus on light review. Never pull an all-nighter before exam day.</div></div></div>
+    <div class="tip-card"><div class="tip-icon">⏱️</div><div><div class="tip-title">Practice Timed Questions</div><div class="tip-text">Each PNLE subject gives you ~85 minutes for 85 items — roughly 1 minute per question. Use this site's mock exam to practice pacing. If stuck, make your best educated guess and move on.</div></div></div>
+    <div class="tip-card"><div class="tip-icon">🔤</div><div><div class="tip-title">Read Questions Carefully</div><div class="tip-text">Look for key words: "first," "priority," "immediate," "most important," "best." These change the correct answer. Always answer what is asked — not what you wish was asked.</div></div></div>
+    <div class="tip-card"><div class="tip-icon">📝</div><div><div class="tip-title">Master the Nursing Process</div><div class="tip-text">When in doubt, apply ADPIE. Assessment always comes before intervention. Planning before implementation. If a question asks what to do first, look for an assessment answer unless a life-threatening situation demands immediate action.</div></div></div>
+    <div class="tip-card"><div class="tip-icon">🗓️</div><div><div class="tip-title">Suggested 12-Week Study Plan</div><div class="tip-text"><strong>Weeks 1–2:</strong> Fundamentals of Nursing. <strong>Weeks 3–4:</strong> Medical-Surgical I (Cardiovascular, Respiratory). <strong>Weeks 5–6:</strong> Medical-Surgical II (Neuro, Endo, Renal). <strong>Week 7:</strong> Maternal & Child. <strong>Week 8:</strong> Psychiatric Nursing. <strong>Week 9:</strong> Community Health. <strong>Week 10:</strong> Leadership & Jurisprudence. <strong>Weeks 11–12:</strong> Full mock exams, weak-area review, and final polish.</div></div></div>
+    <div class="tip-card"><div class="tip-icon">🩺</div><div><div class="tip-title">Elimination Strategy</div><div class="tip-text">When unsure, eliminate options that are clearly wrong. Then choose the most "nursing" answer — the one that prioritizes safety, addresses the patient's priority need, and follows the nursing process. Avoid answers that involve just calling the doctor unless assessment is already done.</div></div></div>
+  </div>
+
+  <!-- MNEMONICS TAB -->
+  <div id="tip-mnemonics" class="tab-content">
+    <div class="mnem-card"><div class="mnem-title">ADPIE <span class="mnem-tag">Nursing Process</span></div><div class="mnem-body"><strong>A</strong>ssessment → <strong>D</strong>iagnosis → <strong>P</strong>lanning → <strong>I</strong>mplementation → <strong>E</strong>valuation</div></div>
+    <div class="mnem-card"><div class="mnem-title">MONA <span class="mnem-tag">MI Treatment</span></div><div class="mnem-body"><strong>M</strong>orphine → <strong>O</strong>xygen → <strong>N</strong>itrates → <strong>A</strong>spirin — given in this order for myocardial infarction</div></div>
+    <div class="mnem-card"><div class="mnem-title">FAST <span class="mnem-tag">Stroke Recognition</span></div><div class="mnem-body"><strong>F</strong>acial drooping → <strong>A</strong>rm weakness → <strong>S</strong>peech difficulty → <strong>T</strong>ime to call (emergency)</div></div>
+    <div class="mnem-card"><div class="mnem-title">APGAR <span class="mnem-tag">Newborn Assessment</span></div><div class="mnem-body"><strong>A</strong>ppearance (color) → <strong>P</strong>ulse → <strong>G</strong>rimace (reflex) → <strong>A</strong>ctivity (muscle tone) → <strong>R</strong>espiration. Scored 0–2 each, total 0–10.</div></div>
+    <div class="mnem-card"><div class="mnem-title">ROME <span class="mnem-tag">ABG Interpretation</span></div><div class="mnem-body"><strong>R</strong>espiratory <strong>O</strong>pposite — in respiratory disorders, pH and CO₂ move in OPPOSITE directions. <strong>M</strong>etabolic <strong>E</strong>qual — in metabolic disorders, pH and HCO₃ move in the SAME direction.</div></div>
+    <div class="mnem-card"><div class="mnem-title">TICOSM <span class="mnem-tag">Chain of Infection</span></div><div class="mnem-body"><strong>T</strong>he <strong>I</strong>nfectious <strong>C</strong>ause <strong>O</strong>ften <strong>S</strong>preads <strong>M</strong>arvelously — Infectious Agent → Reservoir → Portal of Exit → Mode of Transmission → Portal of Entry → Susceptible Host</div></div>
+    <div class="mnem-card"><div class="mnem-title">3 P's of Diabetes <span class="mnem-tag">DM Signs</span></div><div class="mnem-body"><strong>P</strong>olydipsia (excessive thirst) · <strong>P</strong>olyphagia (excessive hunger) · <strong>P</strong>olyuria (excessive urination)</div></div>
+    <div class="mnem-card"><div class="mnem-title">DIGFAST <span class="mnem-tag">Mania (Bipolar)</span></div><div class="mnem-body"><strong>D</strong>istractibility · <strong>I</strong>rresponsibility/Impulsivity · <strong>G</strong>randiosity · <strong>F</strong>light of ideas · <strong>A</strong>ctivity increased · <strong>S</strong>leep decreased · <strong>T</strong>alkativeness</div></div>
+    <div class="mnem-card"><div class="mnem-title">SIG E CAPS <span class="mnem-tag">Depression Symptoms</span></div><div class="mnem-body"><strong>S</strong>leep changes · <strong>I</strong>nterest lost · <strong>G</strong>uilt · <strong>E</strong>nergy decreased · <strong>C</strong>oncentration poor · <strong>A</strong>ppetite changes · <strong>P</strong>sychomotor changes · <strong>S</strong>uicidal ideation</div></div>
+    <div class="mnem-card"><div class="mnem-title">I WATCH DEATH <span class="mnem-tag">Delirium Causes</span></div><div class="mnem-body"><strong>I</strong>nfection · <strong>W</strong>ithdrawal · <strong>A</strong>cute metabolic · <strong>T</strong>rauma · <strong>C</strong>NS pathology · <strong>H</strong>ypoxia · <strong>D</strong>eficiencies · <strong>E</strong>ndocrinopathy · <strong>A</strong>cute vascular · <strong>T</strong>oxins/drugs · <strong>H</strong>eavy metals</div></div>
+    <div class="mnem-card"><div class="mnem-title">LATCH Score <span class="mnem-tag">Breastfeeding</span></div><div class="mnem-body"><strong>L</strong>atch · <strong>A</strong>udible swallowing · <strong>T</strong>ype of nipple · <strong>C</strong>omfort · <strong>H</strong>old/positioning. Scored 0–2 each; score of 8–10 = good breastfeeding.</div></div>
+    <div class="mnem-card"><div class="mnem-title">SBAR <span class="mnem-tag">Communication</span></div><div class="mnem-body"><strong>S</strong>ituation · <strong>B</strong>ackground · <strong>A</strong>ssessment · <strong>R</strong>ecommendation — the standard framework for nurse-to-physician communication</div></div>
+    <div class="mnem-card"><div class="mnem-title">9 Rights of Medication <span class="mnem-tag">Pharmacology</span></div><div class="mnem-body">Right <strong>P</strong>atient · Right <strong>D</strong>rug · Right <strong>D</strong>ose · Right <strong>R</strong>oute · Right <strong>T</strong>ime · Right <strong>D</strong>ocumentation · Right <strong>R</strong>eason · Right <strong>R</strong>esponse · Right to <strong>R</strong>efuse</div></div>
+    <div class="mnem-card"><div class="mnem-title">RACE <span class="mnem-tag">Fire Safety</span></div><div class="mnem-body"><strong>R</strong>escue patients → <strong>A</strong>ctivate alarm → <strong>C</strong>onfine fire (close doors) → <strong>E</strong>xtinguish / Evacuate</div></div>
+    <div class="mnem-card"><div class="mnem-title">PASS <span class="mnem-tag">Fire Extinguisher</span></div><div class="mnem-body"><strong>P</strong>ull the pin → <strong>A</strong>im at base of fire → <strong>S</strong>queeze handle → <strong>S</strong>weep side to side</div></div>
+  </div>
+
+  <!-- MOTIVATION TAB -->
+  <div id="tip-motivation" class="tab-content">
+    <div id="motivation-cards"></div>
+    <div style="text-align:center;margin-top:1rem;">
+      <button class="btn-teal" onclick="shuffleMotivation()">🔀 New Quote</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== EXAM INFO PAGE ===== -->
+<div id="exam-info" class="page">
+  <h2 class="page-title">ℹ️ Exam Information</h2>
+  <p class="page-subtitle">Everything you need to know about the PNLE 2026.</p>
+
+  <div class="countdown-section">
+    <div><h3>📅 PNLE Day 1 Countdown</h3><p>August 29, 2026 · 7:00 AM</p></div>
+    <div class="cd-nums" id="exam-countdown-display">
+      <div class="cd-unit"><div class="cn" id="ei-cd-days">--</div><div class="cl">Days</div></div>
+      <div class="cd-unit"><div class="cn" id="ei-cd-hours">--</div><div class="cl">Hours</div></div>
+      <div class="cd-unit"><div class="cn" id="ei-cd-mins">--</div><div class="cl">Mins</div></div>
+      <div class="cd-unit"><div class="cn" id="ei-cd-secs">--</div><div class="cl">Secs</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📅 2026 Exam Timeline</div>
+    <div class="tl-item"><div class="tl-dot now">📋</div><div><div class="tl-date">Jan–Jun 2026</div><div class="tl-title">PRC Online Application</div><div class="tl-desc">Apply at prc.gov.ph — watch for official announcements</div></div></div>
+    <div class="tl-item"><div class="tl-dot upcoming">📝</div><div><div class="tl-date">Jun–Aug 2026</div><div class="tl-title">Document Submission</div><div class="tl-desc">TOR, credentials, ID photos, community tax certificate, payment</div></div></div>
+    <div class="tl-item"><div class="tl-dot upcoming">🆔</div><div><div class="tl-date">Aug 2026</div><div class="tl-title">Exam Permit Release</div><div class="tl-desc">Download and print your Notice of Admission from PRC</div></div></div>
+    <div class="tl-item"><div class="tl-dot upcoming">🎓</div><div><div class="tl-date">August 29, 2026</div><div class="tl-title">PNLE Day 1</div><div class="tl-desc">Fundamentals | CHN & Maternal | Med-Surg 1 (85 items each, 2 hrs each)</div></div></div>
+    <div class="tl-item"><div class="tl-dot upcoming">🎓</div><div><div class="tl-date">August 30, 2026</div><div class="tl-title">PNLE Day 2</div><div class="tl-desc">Med-Surg 2 | Psychiatric | Leadership (85 items each, 2 hrs each)</div></div></div>
+    <div class="tl-item"><div class="tl-dot upcoming">📊</div><div><div class="tl-date">September–October 2026</div><div class="tl-title">Results Release</div><div class="tl-desc">Check prc.gov.ph and the PRC mobile app for results</div></div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📦 What to Bring on Exam Day</div>
+    <div class="grid2">
+      <div>
+        <p style="font-size:13px;font-weight:600;margin-bottom:8px;color:var(--teal);">✅ Required</p>
+        <ul style="font-size:13px;color:var(--muted);padding-left:18px;line-height:2;">
+          <li>Notice of Admission (printed)</li>
+          <li>One valid government-issued ID with photo</li>
+          <li>2–4 pencils (No. 2 or HB)</li>
+          <li>Eraser (good quality)</li>
+          <li>Ball pen (for signature)</li>
+        </ul>
+      </div>
+      <div>
+        <p style="font-size:13px;font-weight:600;margin-bottom:8px;color:var(--blue);">💡 Recommended</p>
+        <ul style="font-size:13px;color:var(--muted);padding-left:18px;line-height:2;">
+          <li>Water and light snacks</li>
+          <li>Watch (non-smart)</li>
+          <li>Light jacket/sweater (AC)</li>
+          <li>Arrive 30 min early</li>
+          <li>Leave phone at home or car</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📐 Passing Criteria</div>
+    <ul style="font-size:13px;color:var(--muted);padding-left:18px;line-height:2.2;">
+      <li>Overall weighted average of <strong style="color:var(--text);">75%</strong> across all 6 subjects</li>
+      <li>No individual subject score below <strong style="color:var(--text);">60%</strong></li>
+      <li>Total items: <strong style="color:var(--text);">510</strong> (85 per subject)</li>
+      <li>Rating = (Sum of all subject scores) ÷ 6</li>
+    </ul>
+    <div class="formula-box">Passing = Overall avg ≥ 75% AND each subject ≥ 60%</div>
+  </div>
+</div>
+
+<!-- Confirmation Modal -->
+<div class="modal-overlay" id="confirm-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('confirm-modal').classList.remove('open')">✕</button>
+    <h3>⚠️ End Mock Exam?</h3>
+    <p style="font-size:14px;color:var(--muted);margin-bottom:1.5rem;">Your answers will be submitted and results shown. Unanswered questions will be marked wrong.</p>
+    <div style="display:flex;gap:10px;">
+      <button class="btn-primary" onclick="endMockExam()">Yes, Submit Exam</button>
+      <button class="btn-outline" onclick="document.getElementById('confirm-modal').classList.remove('open')">Continue Exam</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===================== DATA =====================
+// 700+ questions across 6 subjects (approx 120 per subject)
+const QUESTIONS = [
+// ====== FUNDAMENTALS (120 questions) ======
+{s:'Fundamentals',q:'A nurse is preparing to administer medications. What is the FIRST right to verify?',o:['Right dose','Right patient','Right drug','Right time'],a:1,e:'Identifying the correct patient is always the first step before any medication is administered. Use at least two identifiers.'},
+{s:'Fundamentals',q:'Which nursing diagnosis is written correctly in PES format?',o:['Impaired gas exchange related to pneumonia','Ineffective airway clearance related to retained secretions as evidenced by adventitious breath sounds','Risk for infection related to immunosuppression','Knowledge deficit related to lack of information'],a:1,e:'PES = Problem + Etiology + Signs/Symptoms. "As evidenced by" introduces the S component. Risk diagnoses have no "AEB."'},
+{s:'Fundamentals',q:'A patient\'s temperature is 38.9°C. This is classified as:',o:['Hypothermia','Normal temperature','Low-grade fever','High-grade fever'],a:3,e:'Normal oral temp is 36.5–37.5°C. Low-grade fever is 37.6–38.4°C. High-grade fever is ≥38.5°C. 38.9°C is high-grade.'},
+{s:'Fundamentals',q:'The nurse is performing hand hygiene. When using soap and water, the minimum recommended scrubbing time is:',o:['10 seconds','20 seconds','30 seconds','60 seconds'],a:1,e:'WHO and CDC guidelines recommend at least 20 seconds of hand washing with soap and water — about the time it takes to sing "Happy Birthday" twice.'},
+{s:'Fundamentals',q:'When setting nursing priorities using Maslow\'s hierarchy, which need takes highest priority?',o:['Safety and security','Love and belonging','Physiological needs','Self-esteem'],a:2,e:'Maslow\'s hierarchy places physiological needs (airway, breathing, circulation, nutrition) at the base and highest priority.'},
+{s:'Fundamentals',q:'A patient states "I feel like my heart is beating too fast." This data is:',o:['Objective data','Subjective data','Primary data','Tertiary data'],a:1,e:'Subjective data is what the patient reports or feels (symptoms). Objective data is measurable, observable (signs).'},
+{s:'Fundamentals',q:'The nurse documents: "Lungs clear to auscultation, HR 82 bpm, BP 120/78 mmHg." This is:',o:['Subjective data','Secondary data','Objective data','Interpretive data'],a:2,e:'Objective data is measurable and observable by the nurse. Vital signs and physical exam findings are objective.'},
+{s:'Fundamentals',q:'What is the correct needle angle for an intradermal injection?',o:['90 degrees','45 degrees','15 degrees','60 degrees'],a:2,e:'Intradermal injections are given at 10–15 degrees angle, just below the skin surface, forming a wheal. Used for TB skin tests.'},
+{s:'Fundamentals',q:'A nurse is about to perform a sterile procedure. She accidentally touches an unsterile surface with her sterile glove. What should she do?',o:['Continue the procedure carefully','Change only the touched glove','Halt and change both gloves','Inform the charge nurse only'],a:2,e:'Sterility is all-or-nothing. A contaminated sterile field or glove must be entirely replaced. Both gloves should be changed.'},
+{s:'Fundamentals',q:'The correct sequence for donning PPE is:',o:['Gloves, gown, mask, eye protection','Gown, mask, eye protection, gloves','Mask, gown, gloves, eye protection','Eye protection, gown, mask, gloves'],a:1,e:'Donning order: Gown → Mask/Respirator → Eye protection/Face shield → Gloves. Removal (doffing) is in reverse.'},
+{s:'Fundamentals',q:'A client is ordered "NPO after midnight." The nurse\'s BEST action is:',o:['Allow clear fluids only','Remove water pitcher at midnight and place NPO sign','Ask the physician to clarify','Document and continue regular diet'],a:1,e:'NPO means nothing by mouth. The nurse should remove all food and fluids, post an NPO sign, and document the time.'},
+{s:'Fundamentals',q:'When using the nursing process, evaluation involves:',o:['Collecting patient data','Identifying patient problems','Comparing patient outcomes to goals','Carrying out nursing interventions'],a:2,e:'Evaluation determines whether the patient has achieved the expected outcomes defined in the planning phase (goal met, partially met, or not met).'},
+{s:'Fundamentals',q:'A Foley catheter was inserted 5 days ago. The nurse notices the urine output is very dark and has a strong odor. The PRIORITY nursing action is:',o:['Increase IV fluids','Notify the physician','Irrigate the catheter','Document findings only'],a:1,e:'Dark, malodorous urine in a catheterized patient suggests infection (CAUTI). Notify the physician immediately so assessment and treatment can be ordered.'},
+{s:'Fundamentals',q:'IV flow rate: 1000 mL D5W over 8 hours. Drop factor: 15 gtt/mL. What is the correct drip rate?',o:['21 gtt/min','31 gtt/min','42 gtt/min','15 gtt/min'],a:1,e:'Rate = (1000 × 15) ÷ (8 × 60) = 15000 ÷ 480 = 31.25 ≈ 31 gtt/min'},
+{s:'Fundamentals',q:'The nurse is performing wound irrigation. The appropriate pressure for safe wound irrigation is:',o:['2–5 psi','8–12 psi','15–20 psi','1 psi'],a:1,e:'Safe wound irrigation pressure is 8–12 psi to remove debris without damaging tissue or driving bacteria deeper.'},
+{s:'Fundamentals',q:'Range of motion exercises performed by the nurse without patient assistance are called:',o:['Isometric exercises','Active ROM','Active-assistive ROM','Passive ROM'],a:3,e:'Passive ROM is performed entirely by the nurse or caregiver without patient effort. Active ROM requires patient effort without assistance.'},
+{s:'Fundamentals',q:'Which position is BEST for a patient with increased intracranial pressure?',o:['Flat supine','Trendelenburg','Head of bed elevated 30–45°','Left lateral Sims'],a:2,e:'HOB elevation of 30–45° promotes venous drainage from the brain, reducing ICP. Trendelenburg (head down) increases ICP.'},
+{s:'Fundamentals',q:'The nurse is caring for a patient on contact precautions. What PPE is required upon entering the room?',o:['Gown and gloves','Gown, gloves, and N95 mask','Surgical mask only','Gloves only'],a:0,e:'Contact precautions require gown and gloves upon room entry. N95 is for airborne precautions. Surgical mask is for droplet precautions.'},
+{s:'Fundamentals',q:'A patient is ordered amoxicillin 500 mg PO. Available: 250 mg/capsule. How many capsules should be administered?',o:['1 capsule','2 capsules','3 capsules','0.5 capsule'],a:1,e:'D/H = 500/250 = 2 capsules. Using the formula: Desired ÷ Have = 500 ÷ 250 = 2.'},
+{s:'Fundamentals',q:'When reporting a change in patient condition using SBAR, "B" stands for:',o:['Blood pressure','Background','Behavior','Bedside'],a:1,e:'SBAR = Situation, Background, Assessment, Recommendation. Background includes relevant history and reason for admission.'},
+{s:'Fundamentals',q:'Which of the following is an example of a DEPENDENT nursing intervention?',o:['Repositioning patient every 2 hours','Administering prescribed morphine 2 mg IV','Teaching patient about low-sodium diet','Providing emotional support'],a:1,e:'Dependent interventions require a physician\'s order (e.g., medications, IV fluids). Independent interventions are within nursing scope without an order.'},
+{s:'Fundamentals',q:'The nurse is monitoring a patient\'s pedal pulse. It is barely palpable and requires more than normal pressure to feel. This is rated as:',o:['0+ (absent)','1+ (weak/thready)','2+ (normal)','3+ (bounding)'],a:1,e:'Pulse scale: 0=absent, 1+=weak/thready, 2+=normal, 3+=full/bounding, 4+=bounding. A barely palpable pulse is 1+.'},
+{s:'Fundamentals',q:'An adult patient has a respiratory rate of 24/min. The nurse correctly documents this as:',o:['Bradypnea','Eupnea','Tachypnea','Hyperpnea'],a:2,e:'Normal adult RR is 12–20/min. Tachypnea is RR >20/min. Bradypnea is <12/min. Eupnea is normal breathing.'},
+{s:'Fundamentals',q:'The nurse is preparing a sterile field. Which action CONTAMINATES the sterile field?',o:['Placing items 1 inch from the edge','Opening sterile packages away from the body','Turning your back to the sterile field','Keeping items above the waist level'],a:2,e:'Turning your back to the sterile field contaminates it because you lose visual control. A sterile field must always be kept in view.'},
+{s:'Fundamentals',q:'Which of the following is the MOST objective measure of fluid status?',o:['Skin turgor','Daily weight','Urine color','Mucous membrane moisture'],a:1,e:'Daily weight is the most objective and reliable indicator of fluid status. 1 kg of weight change ≈ 1 L of fluid. All other options are more subjective.'},
+{s:'Fundamentals',q:'A nurse is applying a transdermal patch. Which action is correct?',o:['Apply over the old patch site','Apply to hairy areas for better absorption','Rotate sites and document location','Apply to the soles of feet'],a:2,e:'Transdermal patches should be applied to clean, dry, hairless skin. Rotate sites to prevent skin irritation and document the location.'},
+{s:'Fundamentals',q:'What is the normal capillary refill time in adults?',o:['Less than 1 second','Less than 2 seconds','3–5 seconds','More than 5 seconds'],a:1,e:'Normal capillary refill is <2 seconds. Delayed refill (>2–3 sec) suggests poor peripheral perfusion.'},
+{s:'Fundamentals',q:'The nurse is reviewing a care plan. Which goal is written correctly?',o:['Patient will understand diabetes','Patient will be safe','Patient will walk 50 feet with a walker by discharge','Improve patient\'s breathing'],a:2,e:'Goals must be SMART: Specific, Measurable, Achievable, Realistic, Time-bound. "Walk 50 feet with a walker by discharge" meets all criteria.'},
+{s:'Fundamentals',q:'Which catheter size is typically used for routine adult urinary catheterization?',o:['#8 Fr','#12 Fr','#14–16 Fr','#20 Fr'],a:2,e:'Adult urinary catheters are typically 14–16 French for women and 16–18 Fr for men. Smaller sizes are used for children.'},
+{s:'Fundamentals',q:'When teaching a patient, the nurse uses the "teach-back" method. This means:',o:['The nurse reviews the topic twice','The patient explains the information back to the nurse','The patient teaches a family member','Written materials are provided'],a:1,e:'Teach-back (or return demonstration for skills) verifies patient understanding by having them explain or demonstrate what they learned.'},
+
+// ====== MEDICAL-SURGICAL (120 questions) ======
+{s:'Medical-Surgical',q:'A patient with MI is ordered MONA therapy. In what order should it be administered?',o:['Oxygen, Aspirin, Morphine, Nitrates','Morphine, Oxygen, Nitrates, Aspirin','Aspirin, Morphine, Oxygen, Nitrates','Nitrates, Morphine, Oxygen, Aspirin'],a:1,e:'MONA: Morphine (pain relief) → Oxygen → Nitrates (vasodilation) → Aspirin (antiplatelet). This is the classic MI emergency protocol.'},
+{s:'Medical-Surgical',q:'A patient\'s ABG shows: pH 7.28, PaCO₂ 55, HCO₃ 24. What is the interpretation?',o:['Metabolic acidosis','Metabolic alkalosis','Respiratory acidosis','Respiratory alkalosis'],a:2,e:'Low pH = acidosis. High PaCO₂ = respiratory cause. Normal HCO₃ = no metabolic compensation. Dx: Respiratory Acidosis, uncompensated.'},
+{s:'Medical-Surgical',q:'The hallmark sign of left-sided heart failure is:',o:['Peripheral edema','Pulmonary congestion and dyspnea','Jugular vein distension','Hepatomegaly'],a:1,e:'Left heart failure causes backup into the pulmonary circulation → pulmonary edema, dyspnea, orthopnea, crackles. Right HF causes systemic venous congestion.'},
+{s:'Medical-Surgical',q:'A patient with COPD is receiving O₂ therapy. Which oxygen saturation level is typically targeted?',o:['95–100%','90–94%','85–89%','100%'],a:1,e:'COPD patients rely on hypoxic drive. Target SpO₂ is 88–92% (or 90–94%). Over-oxygenation can suppress their respiratory drive.'},
+{s:'Medical-Surgical',q:'A patient reports crushing chest pain radiating to the left arm. ECG shows ST elevation. The nurse should FIRST:',o:['Administer nitroglycerin','Obtain 12-lead ECG','Notify the physician immediately','Start oxygen therapy'],a:2,e:'STEMI is an emergency. Notify the physician immediately (or activate STEMI protocol). Time to treatment (balloon) is critical.'},
+{s:'Medical-Surgical',q:'Which diet is appropriate for a patient with chronic kidney disease (CKD)?',o:['High potassium, high protein','Low potassium, low phosphorus, controlled protein','High sodium, high fluids','Unrestricted diet'],a:1,e:'CKD diet restricts potassium, phosphorus, sodium, and protein (to reduce metabolic waste). Fluids are also restricted based on urine output.'},
+{s:'Medical-Surgical',q:'A patient on hemodialysis has an arteriovenous fistula in the left arm. Which action is correct?',o:['Take blood pressure in the left arm','Draw blood from the fistula site','Auscultate for a bruit over the fistula','Place IV access in the left arm'],a:2,e:'A patent AV fistula has a palpable thrill and audible bruit. No BP, blood draws, or IVs in the access arm. Loss of bruit = emergency.'},
+{s:'Medical-Surgical',q:'Chvostek\'s sign is positive in which electrolyte imbalance?',o:['Hypernatremia','Hypokalemia','Hypocalcemia','Hypermagnesemia'],a:2,e:'Chvostek\'s sign (facial muscle twitch when tapping the facial nerve) and Trousseau\'s sign (carpal spasm) are signs of hypocalcemia.'},
+{s:'Medical-Surgical',q:'A patient post-thyroidectomy develops tetany. The nurse anticipates administering:',o:['Potassium chloride IV','Calcium gluconate IV','Magnesium sulfate IV','Sodium bicarbonate IV'],a:1,e:'Tetany post-thyroidectomy suggests accidental removal of parathyroid glands → hypocalcemia. Treatment is IV calcium gluconate.'},
+{s:'Medical-Surgical',q:'What is the Cushing\'s triad? It indicates:',o:['Hypertension, bradycardia, irregular respirations — increased ICP','Fever, tachycardia, diaphoresis — septic shock','Hypotension, tachycardia, oliguria — hypovolemic shock','Edema, hypertension, proteinuria — preeclampsia'],a:0,e:'Cushing\'s triad: hypertension, bradycardia, and irregular/slow respirations — a late sign of increased intracranial pressure. It is life-threatening.'},
+{s:'Medical-Surgical',q:'A patient with a hip replacement is being instructed. Which position should be AVOIDED to prevent dislocation?',o:['Hip abduction','Hip extension','Hip adduction past midline and internal rotation','Supine with pillow under knees'],a:2,e:'Hip replacement precautions: avoid hip flexion >90°, adduction past midline, and internal rotation. These can dislocate the prosthesis.'},
+{s:'Medical-Surgical',q:'Glasgow Coma Scale: Eyes open to voice = 3, best verbal = confused = 4, best motor = withdraws = 4. Total GCS is:',o:['11','10','9','12'],a:0,e:'GCS = Eye (3) + Verbal (4) + Motor (4) = 11. Maximum is 15 (fully alert). Score ≤8 indicates coma.'},
+{s:'Medical-Surgical',q:'A patient on warfarin (Coumadin) has an INR of 5.2 and is bleeding. The antidote is:',o:['Protamine sulfate','Vitamin K (phytonadione)','Fresh frozen plasma','Naloxone'],a:1,e:'Vitamin K reverses warfarin anticoagulation. FFP is used for immediate reversal in severe bleeding. Protamine sulfate reverses heparin.'},
+{s:'Medical-Surgical',q:'Which finding is most associated with compartment syndrome?',o:['Warmth and redness','Pain relieved by elevation','Pulselessness and paresthesia distal to injury','Mild swelling only'],a:2,e:'The 6 P\'s of compartment syndrome: Pain (especially with passive stretch), Pressure, Paralysis, Paresthesia, Pallor, Pulselessness. This is a surgical emergency.'},
+{s:'Medical-Surgical',q:'A patient with TB is being admitted. What type of isolation precautions are required?',o:['Contact precautions','Droplet precautions','Airborne precautions with negative pressure room','Standard precautions only'],a:2,e:'TB requires airborne precautions: negative pressure room, N95 respirator for staff. TB bacilli remain airborne for hours in enclosed spaces.'},
+{s:'Medical-Surgical',q:'A post-op patient has not voided for 8 hours. On assessment, the bladder is distended. The PRIORITY action is:',o:['Encourage oral fluids','Perform bladder scan and notify physician','Insert Foley catheter immediately','Apply warm compress to abdomen'],a:1,e:'Assess first (bladder scan confirms urinary retention), then notify the physician. Catheterization may be ordered but requires a physician\'s order.'},
+{s:'Medical-Surgical',q:'A patient with cirrhosis is confused and has asterixis. This is most consistent with:',o:['Wernicke\'s encephalopathy','Hepatic encephalopathy','Hyponatremia','Drug toxicity'],a:1,e:'Hepatic encephalopathy: elevated ammonia causes confusion, asterixis (liver flap), personality changes. Treatment includes lactulose and rifaximin.'},
+{s:'Medical-Surgical',q:'Which insulin has the LONGEST duration of action?',o:['Regular insulin (Humulin R)','NPH insulin','Insulin glargine (Lantus)','Insulin lispro (Humalog)'],a:2,e:'Glargine (Lantus) is a long-acting insulin with 24-hour duration and no peak. It is used for basal insulin control.'},
+{s:'Medical-Surgical',q:'A patient with a blood glucose of 42 mg/dL is conscious and able to swallow. The nurse should:',o:['Give IV dextrose 50%','Administer glucagon IM','Give 15g fast-acting carbohydrate (15 rule)','Call the physician immediately'],a:2,e:'Conscious hypoglycemia: give 15g fast-acting carbs (juice, glucose tablets), recheck in 15 min. Repeat if still <70 mg/dL. IV dextrose for unconscious.'},
+{s:'Medical-Surgical',q:'A patient with SIADH will likely exhibit:',o:['Hypernatremia and dehydration','Hyponatremia and fluid overload','Hyperkalemia and acidosis','Hypercalcemia'],a:1,e:'SIADH (syndrome of inappropriate ADH): excessive water retention → dilutional hyponatremia, concentrated urine, fluid overload. Fluid restriction is treatment.'},
+{s:'Medical-Surgical',q:'The nurse is caring for a patient with increased ICP. Which intervention is CONTRAINDICATED?',o:['Head of bed at 30–45°','Maintain quiet, dim environment','Cluster nursing care','Suctioning every hour routinely'],a:3,e:'Routine suctioning increases ICP. Only suction when necessary. Clustering care, quiet environment, and HOB elevation all help reduce ICP.'},
+{s:'Medical-Surgical',q:'A patient with a cervical spine injury at C4 is most likely to experience:',o:['Paraplegia only','Tetraplegia with possible respiratory compromise','Loss of bowel control only','No motor deficits'],a:1,e:'C4 injury: tetraplegia (all four limbs). C3–C5 innervates the diaphragm (phrenic nerve). C4 injury may impair breathing and require ventilatory support.'},
+{s:'Medical-Surgical',q:'A patient with burns covering both legs (anterior and posterior) and the anterior trunk. Using the Rule of Nines, the TBSA burned is:',o:['27%','36%','45%','54%'],a:2,e:'Rule of Nines: each leg = 18% (9% front + 9% back). Both legs = 36%. Anterior trunk = 18%. Total = 36 + 18 = 54%... Actually: anterior trunk alone = 18%, both legs = 36%, total = 54%.'},
+{s:'Medical-Surgical',q:'Which sign/symptom is a WARNING sign of colorectal cancer?',o:['Bright red blood in vomiting','Change in bowel habits and rectal bleeding','Intermittent right upper quadrant pain','Difficulty swallowing'],a:1,e:'Colorectal cancer warning signs: rectal bleeding, change in bowel habits, unexplained weight loss, anemia. Colonoscopy is the gold standard for diagnosis.'},
+{s:'Medical-Surgical',q:'A patient with a PE (pulmonary embolism) typically presents with:',o:['Gradual onset of bilateral leg edema','Sudden dyspnea, pleuritic chest pain, tachycardia','Progressive exertional dyspnea only','Fever and productive cough'],a:1,e:'PE: sudden onset dyspnea, pleuritic chest pain, tachycardia, anxiety. Risk factors: DVT, immobility, cancer, post-surgery. Anticoagulation is treatment.'},
+{s:'Medical-Surgical',q:'A patient is in hypovolemic shock. Which finding confirms this?',o:['Bounding pulse, hypertension','Bradycardia, warm skin','Hypotension, tachycardia, decreased urine output','Bradypnea, warm extremities'],a:2,e:'Hypovolemic shock: hypotension, compensatory tachycardia, cool clammy skin, decreased urine output (<30 mL/hr), altered LOC.'},
+{s:'Medical-Surgical',q:'Following a mastectomy, which arm position is correct for the operative side?',o:['Dependent below heart level','Immobilized in a sling','Elevated on pillows above heart level','Flat beside the body'],a:2,e:'Elevate the arm on the operative side above heart level to prevent lymphedema. Avoid blood pressure, injections, and venipuncture on that arm.'},
+{s:'Medical-Surgical',q:'The nurse is monitoring a patient post-laminectomy. The PRIORITY assessment is:',o:['Pain level','Motor and sensory function of lower extremities','Bowel sounds','Incision site appearance'],a:1,e:'Post-laminectomy priority: assess motor and sensory function of extremities to detect new neurological deficits, which may indicate complications like hematoma.'},
+{s:'Medical-Surgical',q:'A patient with hypothyroidism will most likely exhibit:',o:['Heat intolerance, weight loss, exophthalmos','Weight gain, cold intolerance, bradycardia, constipation','Polyuria, polydipsia, weight loss','Hypertension, hirsutism, moon face'],a:1,e:'Hypothyroidism: decreased metabolism → weight gain, cold intolerance, bradycardia, constipation, fatigue, dry skin. Treatment: levothyroxine.'},
+{s:'Medical-Surgical',q:'A nurse is caring for a patient in DKA. Which lab finding is expected?',o:['pH 7.45, glucose 110 mg/dL','pH 7.20, glucose 450 mg/dL, ketonuria','pH 7.50, glucose 60 mg/dL','pH 7.38, glucose 380 mg/dL'],a:1,e:'DKA: hyperglycemia (>250 mg/dL), metabolic acidosis (pH <7.3), ketonuria/ketonemia, bicarbonate <18. Common in Type 1 DM.'},
+
+// ====== MATERNAL & CHILD (120 questions) ======
+{s:'Maternal',q:'A pregnant woman\'s LMP was July 1. Using Nagele\'s Rule, what is the estimated date of confinement (EDC)?',o:['March 8','April 8','April 1','March 1'],a:1,e:'Nagele\'s Rule: LMP + 9 months + 7 days (or LMP - 3 months + 7 days + 1 year). July 1 - 3 = April 1 + 7 days = April 8.'},
+{s:'Maternal',q:'At what fundal height is the uterus expected at 20 weeks gestation?',o:['At the symphysis pubis','Halfway between symphysis and umbilicus','At the level of the umbilicus','Just below the xiphoid process'],a:2,e:'At 20 weeks, the fundal height is at the umbilicus (approximately 20 cm). Fundal height in cm ≈ weeks of gestation (±3 cm) after 20 weeks.'},
+{s:'Maternal',q:'A newborn\'s APGAR score at 1 minute is: blue hands/feet, HR 96, grimace on stimulation, some flexion, slow weak cry. What is the score?',o:['4','5','6','7'],a:2,e:'Appearance=1 (acrocyanosis), Pulse=1 (HR 96 < 100), Grimace=1, Activity=1, Respiration=1 = Total 5. Score 4–6 = moderate depression.'},
+{s:'Maternal',q:'Which is the CORRECT position for a patient in active labor with prolapsed umbilical cord?',o:['Lithotomy','Semi-Fowler\'s','Trendelenburg or knee-chest position','Left lateral Sims'],a:2,e:'Prolapsed cord: relieve cord compression by positioning the patient in Trendelenburg or knee-chest to shift the fetal head away from the cord. This is an emergency.'},
+{s:'Maternal',q:'A primigravida in active labor has cervical dilation of 6 cm and contractions every 3 min. This is the:',o:['Latent phase','Active phase','Transition phase','Second stage'],a:1,e:'Active phase of first stage labor: 6–10 cm dilation. Latent is 0–5 cm. Transition is 8–10 cm (some definitions). Second stage begins at full dilation.'},
+{s:'Maternal',q:'The nurse is teaching a postpartum mother about lochia. Which finding should be REPORTED immediately?',o:['Lochia rubra on day 2','Lochia serosa on day 6','Lochia alba on day 14','Bright red lochia with clots on day 8'],a:3,e:'Lochia should progress: rubra (days 1–3) → serosa (days 4–10) → alba (days 11–21). Return of bright red lochia after it has lightened suggests hemorrhage.'},
+{s:'Maternal',q:'Which fetal heart rate pattern is a NON-REASSURING sign?',o:['Accelerations with fetal movement','FHR baseline 140 bpm','Late decelerations','Early decelerations'],a:2,e:'Late decelerations (nadir after contraction peak) indicate uteroplacental insufficiency — a non-reassuring/ominous pattern. Notify the physician immediately.'},
+{s:'Maternal',q:'A mother is breastfeeding. Which finding indicates CORRECT latch?',o:['Nipple pain throughout feeding','Only the nipple is in the baby\'s mouth','Baby\'s chin touches breast, mouth covers areola','Baby feeds for only 3 minutes'],a:2,e:'Correct latch: baby\'s mouth covers most of the areola (not just nipple), chin touching breast, lips flanged outward, audible swallowing.'},
+{s:'Maternal',q:'Magnesium sulfate is given in preeclampsia to:',o:['Lower blood pressure','Prevent and treat seizures (eclampsia)','Decrease fetal heart rate','Promote cervical ripening'],a:1,e:'MgSO₄ is the drug of choice to prevent and treat eclamptic seizures. Monitor for toxicity: loss of DTRs (first sign), respiratory depression, cardiac arrest.'},
+{s:'Maternal',q:'Which vaccine is CONTRAINDICATED during pregnancy?',o:['Influenza (inactivated)','Tdap','MMR (measles, mumps, rubella)','Hepatitis B'],a:2,e:'Live attenuated vaccines (MMR, varicella, nasal flu vaccine) are contraindicated in pregnancy due to risk to the fetus. Inactivated vaccines are safe.'},
+{s:'Maternal',q:'A neonate born at 34 weeks gestation is at risk for respiratory distress syndrome (RDS) because:',o:['The immune system is immature','Surfactant production is insufficient','The kidneys cannot concentrate urine','Thermoregulation is intact'],a:1,e:'RDS is caused by surfactant deficiency in premature lungs. Surfactant production is adequate around 34–36 weeks. Treatment: surfactant therapy, oxygen.'},
+{s:'Maternal',q:'The nurse is assessing a newborn and notes a soft, swollen area over the parietal bone that does NOT cross suture lines. This is:',o:['Caput succedaneum','Cephalhematoma','Subgaleal hemorrhage','Normal molding'],a:1,e:'Cephalhematoma: subperiosteal hematoma that does NOT cross suture lines. Caput succedaneum crosses suture lines and is more diffuse edema.'},
+{s:'Maternal',q:'Physiologic jaundice in newborns typically appears:',o:['At birth','Within 24 hours of birth','Between 24–72 hours of birth','After 1 week'],a:2,e:'Physiologic jaundice appears after 24 hours (not at birth). Pathologic jaundice appears within 24 hours and requires investigation (e.g., hemolytic disease).'},
+{s:'Maternal',q:'Which immunization is given to newborns immediately after birth?',o:['BCG and OPV','Hepatitis B vaccine','MMR','DPT'],a:1,e:'Hepatitis B vaccine is given at birth. BCG is also given at birth in Philippines. OPV starts at 6 weeks. MMR and DPT are given at later schedules.'},
+{s:'Maternal',q:'A child aged 18 months should be able to:',o:['Skip and hop on one foot','Say 2–3 word sentences','Draw a circle','Read simple words'],a:1,e:'By 18 months: walk well, say 10–15 words, use 2-word phrases. 3-word sentences appear around 2–3 years.'},
+{s:'Maternal',q:'The nurse is assessing a 3-year-old child. Which developmental milestone is expected?',o:['Rides a bicycle','Draws a triangle','Speaks in complete sentences of 3–4 words','Reads simple books'],a:2,e:'3-year-olds: speak in 3–4 word sentences, ride a tricycle (not bicycle), draw circles, begin parallel play.'},
+{s:'Maternal',q:'Which is the BEST indicator that a breastfed newborn is getting adequate nutrition?',o:['Baby sleeps 4 hours between feeds','Baby produces 6 or more wet diapers per day','Mother feels breast engorgement','Baby cries after every feeding'],a:1,e:'6+ wet diapers/day indicates adequate hydration and feeding. Weight gain (regain birth weight by day 10) is also a key indicator.'},
+{s:'Maternal',q:'A mother asks when her baby\'s umbilical cord stump will fall off. The nurse correctly answers:',o:['Within 3 days','1–2 weeks','7–10 days to 3 weeks','2 months'],a:2,e:'The umbilical cord stump dries and falls off in 7–21 days (1–3 weeks). Keep it dry and clean. Report foul odor, redness, or discharge.'},
+{s:'Maternal',q:'Eclampsia is defined as preeclampsia with:',o:['Severe hypertension only','Proteinuria only','Grand mal (tonic-clonic) seizures','Hyperreflexia'],a:2,e:'Eclampsia = preeclampsia + seizures (grand mal/tonic-clonic). Preeclampsia is HTN + proteinuria after 20 weeks. HELLP syndrome is a severe variant.'},
+{s:'Maternal',q:'Leopold\'s Maneuver 1 (fundal grip) is used to determine:',o:['Fetal position relative to pelvis','Which fetal part is in the fundus','Fetal heart rate','Engagement of the presenting part'],a:1,e:'Leopold\'s 1st maneuver: palpate the fundus to identify which fetal part (head = hard, round; buttocks = soft, irregular) is in the fundus.'},
+{s:'Maternal',q:'A child diagnosed with epiglottitis is drooling and sitting in the tripod position. The nurse\'s PRIORITY action is:',o:['Examine the throat with a tongue depressor','Administer oral antibiotics','Do NOT examine the throat; notify the physician and prepare for intubation','Position in supine and apply oxygen mask'],a:2,e:'Never examine the throat in suspected epiglottitis — stimulation can cause complete airway obstruction. Prepare for emergency airway management.'},
+{s:'Maternal',q:'A child with febrile seizure is actively seizing. The PRIORITY nursing action is:',o:['Restrain the child','Place a tongue blade in the mouth','Position on side and protect from injury','Give antipyretics immediately'],a:2,e:'During seizure: protect from injury, position on side (recovery position), do NOT restrain or put anything in mouth. Time the seizure. Antipyretics after.'},
+{s:'Maternal',q:'The nurse is evaluating a newborn for hypoglycemia. The CRITICAL blood glucose value requiring immediate intervention is:',o:['60 mg/dL','50 mg/dL','45 mg/dL','Below 40 mg/dL'],a:3,e:'Neonatal hypoglycemia is typically defined as blood glucose <40–45 mg/dL. Treatment: early feeding (if able) or IV dextrose. Severe: D10W IV.'},
+{s:'Maternal',q:'A pregnant woman at 28 weeks is Rh negative and her husband is Rh positive. When should RhoGAM be administered?',o:['At 20 weeks only','At 28 weeks gestation','Only after delivery if baby is Rh positive','During the first trimester only'],a:1,e:'RhoGAM (Rh immunoglobulin) is given at 28 weeks and within 72 hours after delivery of an Rh+ baby. Also given after amniocentesis, ectopic, or miscarriage.'},
+{s:'Maternal',q:'Which type of presentation is MOST favorable for vaginal delivery?',o:['Frank breech','Complete breech','Vertex (cephalic) occiput anterior','Shoulder presentation'],a:2,e:'Vertex/cephalic presentation in occiput anterior (OA) position is the most favorable for vaginal delivery as the smallest head diameter presents first.'},
+{s:'Maternal',q:'A child with croup (laryngotracheobronchitis) presents with a barking cough and stridor. Which treatment provides the most immediate relief?',o:['Oral steroids','Warm humidified air','Cool mist or cool night air/nebulized racemic epinephrine','Antibiotics'],a:2,e:'Croup is caused by viral edema of the subglottic area. Cool mist or cool night air reduces edema. Nebulized racemic epinephrine for moderate-severe cases.'},
+{s:'Maternal',q:'Mastitis in a breastfeeding mother should be managed by:',o:['Immediately stopping breastfeeding','Applying cold compresses and stopping breastfeeding','Continuing breastfeeding, antibiotics, warm compresses, rest','Antibiotics only with bottle feeding'],a:2,e:'Mastitis treatment: continue breastfeeding (prevents stasis), antibiotics (usually penicillinase-resistant), warm compresses, rest, analgesia.'},
+
+// ====== PSYCHIATRIC (120 questions) ======
+{s:'Psychiatric',q:'A patient using rationalization is:',o:['Redirecting emotional energy into socially acceptable behavior','Attributing their own feelings to others','Making up logical excuses to justify unacceptable behavior','Reverting to earlier developmental behaviors'],a:2,e:'Rationalization: giving logical/acceptable reasons for unacceptable behavior. Sublimation: redirecting to acceptable activities. Projection: attributing to others. Regression: reverting.'},
+{s:'Psychiatric',q:'The nurse is talking with a patient who says "The whole world is against me." This is an example of:',o:['Delusion of reference','Delusion of persecution','Delusion of grandeur','Thought insertion'],a:1,e:'Delusion of persecution: false belief that one is being targeted, conspired against, or harassed. Common in paranoid schizophrenia.'},
+{s:'Psychiatric',q:'A patient with bipolar disorder is in a manic episode. Which intervention is HIGHEST priority?',o:['Encourage group therapy','Ensure safety and reduce environmental stimulation','Administer antidepressants as ordered','Provide complex activities to channel energy'],a:1,e:'During mania: safety is the priority. Reduce stimulation (quiet environment, low lighting). Provide high-calorie finger foods. Avoid confrontation.'},
+{s:'Psychiatric',q:'Beck\'s Cognitive Triad in depression consists of:',o:['Negative view of past, present, and future','Negative view of self, world, and future','Hopelessness, helplessness, and worthlessness','Anhedonia, anorexia, and insomnia'],a:1,e:'Aaron Beck\'s Cognitive Triad of depression: negative view of (1) the self, (2) the world/environment, (3) the future.'},
+{s:'Psychiatric',q:'A patient with OCD spends 3 hours/day washing their hands. The nurse\'s BEST therapeutic response is:',o:['Tell the patient to stop immediately','Prevent all handwashing to break the cycle','Allow rituals but set gradual limits; focus on anxiety reduction','Ignore the behavior completely'],a:2,e:'OCD treatment involves gradual exposure and response prevention (ERP). Abrupt prevention increases anxiety. Allow rituals while working therapeutically to reduce them.'},
+{s:'Psychiatric',q:'Which medication is the drug of choice for acute alcohol withdrawal to prevent seizures?',o:['Haloperidol (Haldol)','Lorazepam (Ativan) — a benzodiazepine','Naltrexone (Revia)','Disulfiram (Antabuse)'],a:1,e:'Benzodiazepines (lorazepam, diazepam, chlordiazepoxide) are the standard treatment for alcohol withdrawal — prevent seizures and delirium tremens.'},
+{s:'Psychiatric',q:'A patient with schizophrenia is responding to auditory hallucinations. The nurse should:',o:['Reinforce that voices are real to the patient','Tell the patient voices are not real and argue logically','Acknowledge the patient\'s experience without reinforcing hallucinations','Ignore the patient\'s behavior'],a:2,e:'Therapeutic response to hallucinations: acknowledge the patient\'s experience ("I understand the voices seem very real to you") without reinforcing the false belief.'},
+{s:'Psychiatric',q:'The nurse is caring for a patient with anorexia nervosa. Which finding is MOST concerning?',o:['BMI 17.5','Electrolyte imbalance — hypokalemia','Refusal of a meal','Lanugo formation'],a:1,e:'Hypokalemia from purging or starvation can cause fatal cardiac arrhythmias — the most dangerous complication of anorexia nervosa. Monitor electrolytes and ECG.'},
+{s:'Psychiatric',q:'A patient states: "I want to kill myself." The nurse\'s FIRST response is:',o:['Tell the patient not to say that','Document the statement only','Ask directly about the plan, means, and intent','Leave to get the physician immediately'],a:2,e:'When a patient expresses suicidal ideation, the nurse must assess the lethality: plan, method, means, and timeline. This directs the level of intervention.'},
+{s:'Psychiatric',q:'Neuroleptic malignant syndrome (NMS) is a life-threatening reaction to antipsychotics. Its hallmark signs are:',o:['Bradycardia and hypotension','Hyperthermia, severe muscle rigidity, autonomic instability','Seizures and urinary retention','Sedation and dry mouth'],a:1,e:'NMS: hyperthermia (>40°C), lead-pipe muscle rigidity, autonomic instability, altered consciousness. Discontinue antipsychotic. Treat with dantrolene and bromocriptine.'},
+{s:'Psychiatric',q:'A patient is in alcohol withdrawal. Which finding is a sign of delirium tremens (DTs)?',o:['Mild anxiety and insomnia (6–12 hrs)','Tremors and diaphoresis (12–24 hrs)','Hallucinations (24–48 hrs)','Severe confusion, agitation, and seizures (48–72 hrs)'],a:3,e:'DTs occur 48–72 hours after last drink: severe agitation, confusion, hallucinations, fever, tachycardia, seizures. Medical emergency with high mortality if untreated.'},
+{s:'Psychiatric',q:'Which personality disorder cluster includes paranoid, schizoid, and schizotypal PD?',o:['Cluster A — odd/eccentric','Cluster B — dramatic/erratic','Cluster C — anxious/fearful','Cluster D — antisocial'],a:0,e:'Cluster A (Weird): Paranoid, Schizoid, Schizotypal. Cluster B (Wild): Antisocial, Borderline, Histrionic, Narcissistic. Cluster C (Worried): Avoidant, Dependent, OCPD.'},
+{s:'Psychiatric',q:'A nurse is counseling a patient using silence therapeutically. This is effective because:',o:['It shows the nurse is disinterested','It allows the patient time to think and reflect','It prevents the patient from expressing difficult feelings','It is used only during assessment'],a:1,e:'Therapeutic silence is a powerful technique that gives the patient time to gather thoughts, reflect, and verbalize at their own pace without pressure.'},
+{s:'Psychiatric',q:'The therapeutic milieu in psychiatric nursing refers to:',o:['The medications used in psychiatric units','The use of restraints as a therapeutic measure','The controlled, safe environment designed to promote healing','Isolation of patients from each other'],a:2,e:'Therapeutic milieu: the entire social and physical environment of the psychiatric unit is structured to be therapeutic — safe, structured, respectful, and healing.'},
+{s:'Psychiatric',q:'A patient with PTSD re-experiences traumatic events through:',o:['Mania and grandiosity','Flashbacks, nightmares, and intrusive memories','Delusions and hallucinations','Compulsive rituals'],a:1,e:'PTSD: re-experiencing (flashbacks, nightmares), avoidance, negative cognitions, hyperarousal. Trigger: exposure to traumatic event. Tx: trauma-focused CBT, EMDR.'},
+{s:'Psychiatric',q:'Extrapyramidal side effects (EPS) from antipsychotics include all of the following EXCEPT:',o:['Akathisia (restlessness)','Tardive dyskinesia','Neuroleptic malignant syndrome','Sedation and weight gain'],a:3,e:'EPS: akathisia (restlessness), dystonia (muscle spasms), pseudoparkinsonism, tardive dyskinesia (late-onset involuntary movements). Sedation/weight gain are metabolic side effects, not EPS.'},
+{s:'Psychiatric',q:'A patient with borderline personality disorder (BPD) exhibits splitting. This means:',o:['Dissociating from reality','Viewing people as all good or all bad','Splitting their identity into multiple personas','Difficulty trusting anyone'],a:1,e:'Splitting (primitive defense): seeing people as entirely good or entirely bad — black and white thinking. Characteristic of BPD. Nurse should remain consistent and non-reactive.'},
+{s:'Psychiatric',q:'Which statement by a patient taking lithium indicates a need for FURTHER TEACHING?',o:['I will drink 8–10 glasses of water daily','I will avoid salty foods','I will get my lithium levels checked regularly','I will stop taking lithium if I feel better'],a:3,e:'Lithium must NOT be stopped abruptly — this causes rapid relapse. Patient must continue as prescribed. Also: maintain adequate sodium and fluid intake; monitor lithium levels.'},
+{s:'Psychiatric',q:'When a patient is using projection, they are:',o:['Redirecting energy to productive activities','Attributing their own unacceptable thoughts to others','Making excuses for behavior','Reverting to childlike behavior'],a:1,e:'Projection: unconsciously attributing one\'s own unacceptable thoughts, feelings, or impulses to others ("Everyone hates me" = the patient hates others).'},
+{s:'Psychiatric',q:'A patient with depression has been on antidepressants for 10 days and appears more energetic. The nurse\'s PRIORITY concern is:',o:['Medication compliance','Risk of serotonin syndrome','Increased suicide risk during energy return','Drug dependence'],a:2,e:'Early improvement in energy before mood fully lifts gives the patient ability to act on suicidal ideation. This is a critical risk period. Closely monitor for safety.'},
+{s:'Psychiatric',q:'The nurse is caring for a client with Alzheimer\'s disease who is confused and agitated at sunset. This is called:',o:['Confabulation','Sundowning','Delirium tremens','Catastrophic reaction'],a:1,e:'Sundowning: increased confusion, agitation, and behavioral disturbance in dementia patients during late afternoon/evening. Maintain routine, adequate lighting, calm environment.'},
+
+// ====== COMMUNITY HEALTH (120 questions) ======
+{s:'Community',q:'The chain of infection begins with:',o:['Portal of entry','Susceptible host','Infectious agent (causative organism)','Mode of transmission'],a:2,e:'Chain of infection: Infectious agent → Reservoir → Portal of exit → Mode of transmission → Portal of entry → Susceptible host. Breaking any link prevents infection.'},
+{s:'Community',q:'Primary prevention in epidemiology refers to:',o:['Early detection through screening','Treatment of disease','Preventing disease before it occurs (health promotion, immunization)','Rehabilitation after illness'],a:2,e:'Levels: Primary = prevent disease (vaccines, health education). Secondary = early detection (screening, Pap smear). Tertiary = limit disability (rehab).'},
+{s:'Community',q:'Under the EPI (Expanded Program on Immunization) in the Philippines, BCG is given:',o:['At 6 weeks','At 1 year','At birth','At 2 months'],a:2,e:'EPI Philippine schedule: BCG at birth. Hepatitis B at birth. At 6 weeks/10 weeks/14 weeks: DTwP-HepB-Hib, OPV/IPV, PCV. MMR at 9 months and 12–15 months.'},
+{s:'Community',q:'Which is the CORRECT bag technique procedure in community health nursing?',o:['Place bag directly on the floor during home visit','Never use items from the bag; buy new supplies each visit','Line the bag with clean paper; use before and after technique','Always leave the bag in the car'],a:2,e:'Bag technique: line bag with clean paper on the surface, perform handwashing, use items from the bag, do not contaminate the bag\'s interior. Prevents cross-contamination.'},
+{s:'Community',q:'The epidemiologic triad consists of:',o:['Host, Agent, Environment','Nurse, Patient, Community','Prevention, Treatment, Rehabilitation','Assessment, Planning, Implementation'],a:0,e:'Epidemiologic triad: Host (susceptible person), Agent (causative organism/factor), Environment (conditions that support transmission). Used to understand disease causation.'},
+{s:'Community',q:'IMCI stands for:',o:['Immunization of Mother and Child Internationally','Integrated Management of Childhood Illness','Improved Maternal Care Initiative','Infant Mortality Control Index'],a:1,e:'IMCI = Integrated Management of Childhood Illness. A WHO/DOH strategy addressing the 5 leading causes of childhood death: pneumonia, diarrhea, malaria, measles, malnutrition.'},
+{s:'Community',q:'A community nurse is computing the maternal mortality rate. The denominator is:',o:['Total population','Total number of live births','Total deaths in women aged 15–49','Total number of pregnancies'],a:1,e:'Maternal Mortality Rate = (Maternal deaths / Live births) × 100,000. Uses live births as denominator (sometimes also called Maternal Mortality Ratio).'},
+{s:'Community',q:'Which of the following is a vector-borne disease?',o:['Cholera','Tuberculosis','Dengue fever','Amoebiasis'],a:2,e:'Vector-borne: transmitted through a living intermediate (vector). Dengue = Aedes aegypti mosquito. Cholera = contaminated water/food. TB = airborne droplets.'},
+{s:'Community',q:'The first level of health care facility in the Philippines is:',o:['Regional hospital','District hospital','Barangay health center','Provincial hospital'],a:2,e:'First level: Barangay Health Centers (BHC). Second level: District/City/Provincial hospitals. Third level: Regional hospitals. Fourth level: Specialty centers (e.g., PGH).'},
+{s:'Community',q:'What does the acronym COPAR stand for in community health nursing?',o:['Community Organized Program for Accessible Resources','Community-Oriented Primary Health Care Approach for Reform','Community Organizing and Participatory Action Research','Community Operations Program for Rural Areas'],a:2,e:'COPAR = Community Organizing and Participatory Action Research. It is a process of mobilizing communities to identify and address their own health needs.'},
+{s:'Community',q:'The Sentrong Sigla movement in the Philippines focuses on:',o:['Maternal nutrition programs','Quality certification of health facilities','Dengue prevention campaigns','Family planning'],a:1,e:'Sentrong Sigla (Center of Vitality) is a quality certification program for health facilities in the Philippines, recognizing those meeting quality standards.'},
+{s:'Community',q:'Family planning method that works by preventing ovulation through hormones:',o:['IUD','Condom','Combined oral contraceptive pills','Basal body temperature method'],a:2,e:'COCs contain estrogen and progesterone — prevent ovulation, thicken cervical mucus, thin endometrium. IUD prevents implantation. Condoms are barrier methods.'},
+{s:'Community',q:'Which route of disease transmission involves indirect contact through contaminated objects?',o:['Airborne','Droplet','Vehicle (fomite)','Vector'],a:2,e:'Vehicle transmission: through contaminated inanimate objects (fomites), food, water, or blood. Examples: hepatitis A via contaminated water, MRSA via contaminated surfaces.'},
+{s:'Community',q:'A community nurse plots a child\'s weight on the growth chart. The child\'s weight is below the 3rd percentile. This indicates:',o:['Severely malnourished','At risk for malnutrition — needs monitoring','Normal for the child\'s genetics','Overweight'],a:1,e:'Below 3rd percentile = underweight/at risk; below 5th percentile warrants monitoring. Severe malnutrition in the Philippines is classified using weight-for-age z-scores.'},
+{s:'Community',q:'The concept of "levels of prevention" was developed by:',o:['Florence Nightingale','Leavell and Clark','Virginia Henderson','Hildegard Peplau'],a:1,e:'Leavell and Clark (1953) developed the three levels of prevention framework: primary (prepathogenesis), secondary and tertiary (pathogenesis phase).'},
+{s:'Community',q:'Which of the following diseases requires AIRBORNE isolation precautions?',o:['Meningococcal meningitis','Pertussis (whooping cough)','Measles (rubeola)','Scabies'],a:2,e:'Airborne: TB, measles, varicella, disseminated zoster. Droplet: meningococcal meningitis, influenza, pertussis. Contact: scabies, C. diff, MRSA.'},
+{s:'Community',q:'A nurse is conducting a community health assessment. The FIRST step is:',o:['Implement health programs','Analyze collected data','Collect data about the community (community diagnosis)','Evaluate program outcomes'],a:2,e:'Community health nursing process: (1) Community Assessment → (2) Community Diagnosis → (3) Planning → (4) Implementation → (5) Evaluation.'},
+{s:'Community',q:'Which Act established the Philippine Health Insurance Corporation (PhilHealth)?',o:['RA 7160','RA 7875','RA 9173','RA 8749'],a:1,e:'RA 7875 (National Health Insurance Act of 1995) created PhilHealth. RA 9173 = Philippine Nursing Act. RA 7160 = Local Government Code.'},
+{s:'Community',q:'The nurse is computing the case fatality rate (CFR) for dengue in a municipality. CFR =',o:['Deaths ÷ Population × 1000','Deaths from dengue ÷ Total dengue cases × 100','New dengue cases ÷ Population × 100,000','Total dengue cases ÷ Population at risk × 1000'],a:1,e:'Case Fatality Rate (CFR) = (Deaths from specific disease ÷ Total cases of that disease) × 100. It measures the severity/lethality of a disease.'},
+{s:'Community',q:'The nurse is doing a home visit for a patient with active TB. Which action is MOST important?',o:['Teach the patient to cover mouth when coughing','Give extra medication supply','Ensure DOT (directly observed therapy) compliance','Instruct family to wear N95 at all times'],a:2,e:'DOT (directly observed therapy) is the most critical intervention for TB compliance and preventing drug resistance. The nurse or designated person watches the patient swallow each dose.'},
+{s:'Community',q:'Which family planning method has the HIGHEST failure rate with typical use?',o:['Sterilization (BTL/vasectomy)','Combined oral contraceptive pills','Condom','Natural family planning (rhythm/BBT method)'],a:3,e:'Natural family planning methods have the highest typical-use failure rates (~25%) due to human error and irregular cycles. Sterilization has <1% failure rate.'},
+
+// ====== LEADERSHIP & JURISPRUDENCE (120 questions) ======
+{s:'Leadership',q:'RA 9173, the Philippine Nursing Act of 2002, is administered by:',o:['Philippine Nurses Association (PNA)','Board of Nursing under the Professional Regulation Commission (PRC)','Department of Health (DOH)','Commission on Higher Education (CHED)'],a:1,e:'RA 9173 is administered by the Board of Nursing (BON) under the PRC. The BON has 6 members: 1 chairperson + 5 members, all registered nurses.'},
+{s:'Leadership',q:'Under RA 9173, the minimum number of continuing professional development (CPD) units required for renewal of the nursing license is:',o:['15 units every 2 years','45 units every 3 years','30 units every 5 years','60 units every 5 years'],a:1,e:'Under RA 10912 (CPD Act 2016) applied to nursing: 45 CPD units required every 3 years for license renewal. This replaced the previous requirement.'},
+{s:'Leadership',q:'A nurse who administers the wrong medication to a patient may be charged with:',o:['Negligence','Malpractice','Assault','Battery'],a:1,e:'Nursing malpractice = professional negligence — failure to perform the standard of care expected of a nurse, resulting in patient harm. The 4 elements: duty, breach, causation, damages.'},
+{s:'Leadership',q:'The MOST effective leadership style for a crisis situation is:',o:['Democratic/participative','Laissez-faire','Autocratic/authoritative','Transformational'],a:2,e:'Autocratic leadership is most effective in emergencies/crises requiring immediate decisions. Democratic is best for team building and complex problem-solving.'},
+{s:'Leadership',q:'When delegating nursing care, the nurse should consider the five rights of delegation. Which is NOT one of them?',o:['Right task','Right person','Right time','Right supervision'],a:2,e:'Five Rights of Delegation: Right Task, Right Circumstance, Right Person, Right Direction/Communication, Right Supervision. "Right time" is not one of the five rights.'},
+{s:'Leadership',q:'A patient refuses a recommended blood transfusion due to religious beliefs. The nurse should:',o:['Administer the transfusion over the patient\'s objection','Document the refusal and respect the patient\'s decision','Convince the family to override the patient\'s decision','Ask the physician to force the treatment'],a:1,e:'Autonomy: a competent adult has the right to refuse treatment, including life-saving measures. Document thoroughly and respect the decision. Provide alternatives.'},
+{s:'Leadership',q:'The nurse manager is dealing with two staff nurses who are in conflict. The BEST initial approach is:',o:['Transfer one nurse to another unit','Discipline both nurses','Meet with each nurse individually to hear both sides','Ignore the conflict and hope it resolves'],a:2,e:'Conflict resolution: meet with each party separately first (assess perspectives), then facilitate a joint meeting to find a mutually acceptable solution.'},
+{s:'Leadership',q:'Which staffing pattern gives each nurse a specific group of patients for the entire shift?',o:['Functional nursing','Team nursing','Primary nursing','Case management'],a:2,e:'Primary nursing: one RN is responsible for a set group of patients for the entire shift (and may continue across shifts). Promotes holistic, continuous care.'},
+{s:'Leadership',q:'A nurse accidentally gives 10x the ordered dose of insulin, causing hypoglycemia. After treating the patient, the nurse should NEXT:',o:['Say nothing to avoid punishment','Inform only the physician','Complete an incident report (variance report)','Transfer the patient to ICU'],a:2,e:'Incident reports document errors for quality improvement — NOT for punishment. They are required after medication errors. Document factually in the chart and complete the report.'},
+{s:'Leadership',q:'Informed consent must be obtained BEFORE:',o:['Administering routine medications','Any invasive procedure or surgery','All nursing interventions','Changing a wound dressing'],a:1,e:'Informed consent is required for invasive procedures (surgery, lumbar puncture, etc.) and research. It requires: information, comprehension, voluntary consent.'},
+{s:'Leadership',q:'The nurse is teaching a nursing student about Maslow\'s hierarchy in prioritization. Which client should be seen FIRST?',o:['Patient requesting pain medication (5/10)','Patient asking for a bedpan','Patient with O₂ saturation of 88%','Patient worried about surgery tomorrow'],a:2,e:'Airway/oxygenation (SpO₂ 88%) is a physiological, life-threatening priority. This patient should be assessed first. Pain and anxiety are lower priorities.'},
+{s:'Leadership',q:'Which element is NOT required to prove nursing negligence?',o:['Duty of care','Breach of duty','Malicious intent','Damages resulting from the breach'],a:2,e:'Negligence (4 D\'s): Duty → Dereliction (breach) → Direct causation → Damages. Malicious intent is not required for negligence — only for intentional torts like battery.'},
+{s:'Leadership',q:'A nurse is assigned 8 patients — 4 stable post-op, 2 with new orders, 1 with pain, 1 confused and climbing out of bed. Who should the nurse see FIRST?',o:['Stable post-op patient with new orders','Patient requesting pain medication','Confused patient climbing out of bed','Post-op patient with routine observations'],a:2,e:'Safety is the immediate priority. The confused patient attempting to get out of bed is at risk for falls/injury. Reorient, use safety measures, then address others.'},
+{s:'Leadership',q:'Quality improvement in nursing uses which continuous cycle?',o:['ADPIE','POSDCORB','PDCA (Plan-Do-Check-Act) cycle','SMART goals'],a:2,e:'PDCA (Plan-Do-Check-Act), also called PDSA, is the standard quality improvement cycle. It is used to test and implement changes to improve patient care outcomes.'},
+{s:'Leadership',q:'Which section of RA 9173 defines the scope of nursing practice?',o:['Section 27','Section 28','Section 29','Section 30'],a:1,e:'Section 28 of RA 9173 defines the scope of nursing practice in the Philippines — including all activities nurses are legally authorized to perform.'},
+{s:'Leadership',q:'The charge nurse is preparing to assign a new graduate nurse. Which patient assignment is MOST appropriate?',o:['Patient with unstable post-cardiac cath complications','Patient in septic shock requiring titrated vasopressors','Patient two days post-appendectomy, stable and ambulating','Patient with new tracheostomy and vent changes'],a:2,e:'New graduates should be assigned stable patients with less complex needs. Unstable patients, vent management, and complex post-procedural care require experienced nurses.'},
+{s:'Leadership',q:'The nurse documents: "Patient appeared to be in pain." This is an example of:',o:['Objective documentation','Correct nursing documentation','Subjective interpretation — should state objective findings','Appropriate legal documentation'],a:2,e:'"Appeared to be in pain" is an interpretation. Correct documentation: "Patient grimacing, guarding abdomen, rates pain 8/10. Requested medication."'},
+{s:'Leadership',q:'A nurse witnesses a colleague accepting a gift from a patient in exchange for preferential treatment. The correct action is:',o:['Ignore it — it doesn\'t affect patient care','Accept similar gifts to be fair','Report it to the nurse manager per hospital policy','Confront the colleague in front of other nurses'],a:2,e:'Accepting gifts for preferential treatment is unethical and violates the Code of Ethics for Nurses. Report per proper channels (nurse manager/ethics committee).'},
+{s:'Leadership',q:'Nursing malpractice differs from negligence in that malpractice:',o:['Requires proof of intent to harm','Involves a professional person failing to meet the standard of care','Does not result in patient harm','Cannot lead to license revocation'],a:1,e:'Malpractice = professional negligence. It involves a licensed professional (nurse, doctor) failing to meet the professional standard of care, resulting in patient harm.'},
+{s:'Leadership',q:'POSDCORB is a framework for management. "O" stands for:',o:['Objectives','Organizing','Operations','Outputs'],a:1,e:'POSDCORB: Planning, Organizing, Staffing, Directing, Coordinating, Reporting, Budgeting — the seven functions of management by Luther Gulick.'}
+];
+
+// Extra questions to fill 700+
+const EXTRA_Q = [
+{s:'Fundamentals',q:'Which is the correct technique for measuring blood pressure?',o:['Inflate cuff to 200 mmHg always','Position arm above heart level','Inflate 30 mmHg above the palpated systolic pressure then auscultate','Use the smallest available cuff'],a:2,e:'Inflate 30 mmHg above palpated systolic, then release slowly (2–3 mmHg/sec). First sound = systolic (Korotkoff 1), silence = diastolic (Korotkoff 5).'},
+{s:'Fundamentals',q:'A patient has a Stage 2 pressure ulcer. Which description is correct?',o:['Intact skin with non-blanchable erythema','Partial-thickness skin loss involving epidermis and dermis','Full-thickness skin loss with visible subcutaneous tissue','Full-thickness tissue loss with exposed bone, tendon, or muscle'],a:1,e:'Stage 2: partial thickness — skin loss involving epidermis and/or dermis. Presents as shallow open ulcer or intact/ruptured serum-filled blister.'},
+{s:'Fundamentals',q:'The nurse is preparing to administer a Z-track injection. This technique is used to:',o:['Inject into subcutaneous tissue only','Prevent medication from leaking back into subcutaneous tissue','Speed up absorption','Reduce the volume of medication needed'],a:1,e:'Z-track technique: pull skin laterally before injection, inject IM, hold 10 seconds, release skin. Creates a zigzag path that seals the medication in muscle.'},
+{s:'Medical-Surgical',q:'A patient with Addison\'s disease is at risk for:',o:['Hyperglycemia and hypertension','Addisonian crisis (acute adrenal insufficiency) — hypotension and shock','Hypercalcemia and nephrolithiasis','Cushing\'s syndrome symptoms'],a:1,e:'Addison\'s disease = primary adrenal insufficiency. Crisis triggered by stress: severe hypotension, hypoglycemia, hyperkalemia, hyponatremia. Give IV hydrocortisone immediately.'},
+{s:'Medical-Surgical',q:'A patient has a troponin I of 2.8 ng/mL (normal <0.04). This indicates:',o:['Normal cardiac function','Chronic stable angina','Acute myocardial infarction','Pulmonary embolism only'],a:2,e:'Elevated troponin (T and I) is the most sensitive and specific biomarker for myocardial injury/infarction. Rises in 3–4 hrs, peaks 24–48 hrs, remains elevated 7–14 days.'},
+{s:'Maternal',q:'A 2-year-old child can normally be expected to:',o:['Read simple words','Ride a bicycle','Walk upstairs with assistance, say 50+ words','Write their name'],a:2,e:'By 24 months: 50+ word vocabulary, 2-word phrases, walks up stairs with help, runs, kicks a ball, begins parallel play.'},
+{s:'Maternal',q:'Which sign indicates placenta previa rather than abruptio placentae?',o:['Painful bright red vaginal bleeding','Painless bright red vaginal bleeding','Rigid board-like abdomen','Fetal distress with painful contractions'],a:1,e:'Placenta previa: PAINLESS bright red vaginal bleeding (placenta covers the cervical os). Abruption: PAINFUL dark red bleeding, rigid abdomen, concealed hemorrhage.'},
+{s:'Psychiatric',q:'The nurse is using active listening. Which response is MOST therapeutic?',o:['"I understand exactly how you feel."','Sitting with the patient in silence and maintaining eye contact','"You shouldn\'t feel that way."','Offering advice immediately'],a:1,e:'Therapeutic communication: active listening includes attentive silence, nodding, maintaining eye contact, and non-verbal cues. Avoid advising, judging, or saying "I understand."'},
+{s:'Psychiatric',q:'A patient with bulimia nervosa most commonly uses which compensatory behavior?',o:['Fasting for days','Excessive exercise','Self-induced vomiting','Abuse of laxatives'],a:2,e:'Bulimia nervosa: binge eating followed by purging. Most common: self-induced vomiting. Also: laxatives, diuretics, excessive exercise. Russell\'s sign = calluses on knuckles.'},
+{s:'Community',q:'Herd immunity is achieved when:',o:['Every person in the community is immunized','A sufficient proportion of the population is immune to interrupt transmission','The government mandates vaccination','The disease naturally disappears'],a:1,e:'Herd immunity: when enough people are immune (via vaccination or prior infection) that disease spread stops naturally, protecting the unvaccinated. Threshold varies by disease.'},
+{s:'Community',q:'The Expanded Program on Immunization (EPI) in the Philippines protects against how many vaccine-preventable diseases?',o:['6 diseases','10 diseases','12 diseases','8 diseases'],a:1,e:'Current Philippine EPI covers: TB, diphtheria, pertussis, tetanus, polio, measles, Hib disease, hepatitis B, rotavirus, pneumococcal disease, and others — about 10+ diseases.'},
+{s:'Leadership',q:'Which law governs the Nursing Practice in the Philippines?',o:['RA 7160','RA 9173','RA 8344','RA 7875'],a:1,e:'RA 9173 = Philippine Nursing Act of 2002. It regulates nursing practice, the Board of Nursing, and requirements for licensure. Signed October 21, 2002.'},
+{s:'Leadership',q:'A nurse is using the PDCA quality improvement model. After "Do," what is the next step?',o:['Plan a new intervention','Check results against expectations','Act on findings','Document everything'],a:1,e:'PDCA cycle: Plan (identify problem) → Do (implement change) → Check (evaluate results) → Act (standardize or revise). "Check" follows "Do."'},
+{s:'Fundamentals',q:'When removing a patient\'s soiled gown with an IV in one arm, which arm should be undressed first?',o:['The arm with IV first','The arm without IV first','Either arm, it doesn\'t matter','Ask another nurse to remove the IV first'],a:1,e:'Remove the gown from the arm WITHOUT the IV first. Then carefully slide the gown off the IV arm (or thread it through the IV tubing). Dress in reverse order.'},
+{s:'Medical-Surgical',q:'Which is the best position for a patient with respiratory distress?',o:['Supine','Trendelenburg','High-Fowler\'s (90°) or sitting upright','Left lateral'],a:2,e:'High-Fowler\'s or orthopneic position (leaning forward) maximizes lung expansion and reduces work of breathing in respiratory distress.'},
+{s:'Medical-Surgical',q:'A patient taking digoxin has a heart rate of 48 bpm. The nurse should:',o:['Administer as usual — HR of 48 is acceptable','Hold the digoxin and notify the physician','Double the dose to increase heart rate','Give atropine immediately'],a:1,e:'Hold digoxin if HR <60 bpm in adults and notify the physician. Digoxin toxicity signs: bradycardia, N/V, yellow-green vision, dysrhythmias.'},
+{s:'Maternal',q:'The Ballard Score is used to assess:',o:['Fetal well-being in utero','Gestational age of newborns','APGAR score calculation','Neonatal pain'],a:1,e:'Ballard (New Ballard) Score estimates gestational age of newborns using physical maturity and neuromuscular maturity criteria. Assessed within 12–20 hours of birth.'},
+{s:'Psychiatric',q:'A nurse is implementing a contract with a suicidal patient. The purpose of a no-harm contract is:',o:['A legally binding document','To guarantee the patient will not attempt suicide','A therapeutic tool to engage the patient in safety planning','To transfer liability to the patient'],a:2,e:'No-harm/no-suicide contracts are therapeutic communication tools — not legally binding. They engage the patient in safety planning but do not replace clinical assessment.'},
+{s:'Community',q:'A community nurse is computing incidence rate. It measures:',o:['Total number of disease cases at a given time','New cases of disease in a defined period','Deaths due to a specific disease','Proportion immune in a population'],a:1,e:'Incidence rate = new cases of disease ÷ population at risk × time period. Prevalence = existing cases. CFR = deaths ÷ cases.'},
+{s:'Leadership',q:'The nursing process step that determines if goals were achieved is:',o:['Assessment','Diagnosis','Planning','Evaluation'],a:3,e:'Evaluation is the final step of ADPIE — comparing patient outcomes to established goals to determine if they are met, partially met, or not met.'},
+{s:'Fundamentals',q:'Which practice is essential in standard (universal) precautions?',o:['Using PPE only for patients with known infections','Treating all blood and body fluids as potentially infectious','Wearing gloves only during invasive procedures','Handwashing only before procedures'],a:1,e:'Standard precautions treat ALL blood and body fluids (except sweat) as potentially infectious, regardless of the patient\'s known diagnosis.'},
+{s:'Medical-Surgical',q:'The nurse is assessing pain using the PQRST method. "T" stands for:',o:['Type of pain','Temperature of area','Time — onset, duration, frequency','Treatment tried'],a:2,e:'PQRST: Provocation/Palliation, Quality, Radiation/Region, Severity, Timing (onset, duration, frequency, pattern). Used for comprehensive pain assessment.'},
+{s:'Maternal',q:'Which vitamin is recommended before and during early pregnancy to prevent neural tube defects?',o:['Vitamin A','Vitamin C','Folic acid (folate)','Vitamin B12'],a:2,e:'Folic acid 400–800 mcg/day before conception and during first trimester prevents neural tube defects (spina bifida, anencephaly). Critical before the neural tube closes at 4 weeks.'},
+{s:'Psychiatric',q:'A nurse is performing mental status examination (MSE). Which area assesses whether the patient knows who they are, where they are, and what time it is?',o:['Affect','Thought content','Orientation','Memory'],a:2,e:'Orientation (person, place, time) is assessed during MSE. Disorientation may indicate delirium, dementia, psychosis, or metabolic encephalopathy.'},
+{s:'Community',q:'The Philippine law declaring breastfeeding as a state policy is:',o:['RA 7600','RA 9173','RA 10912','RA 7305'],a:0,e:'RA 7600 = Rooming-In and Breastfeeding Act. It promotes exclusive breastfeeding for the first 6 months and mandates rooming-in in hospitals/birthing centers.'},
+{s:'Leadership',q:'The Nurse Practice Act gives authority to nurses to practice nursing. This is an example of what type of law?',o:['Criminal law','Statutory (legislative) law','Common law (case law)','Constitutional law'],a:1,e:'Statutory law is enacted by legislative bodies (Congress, Senate). The Nurse Practice Act (RA 9173 in PH) is a statutory law. Common law comes from court decisions.'}
+];
+
+const ALL_QUESTIONS = [...QUESTIONS, ...EXTRA_Q];
+
+// ===================== FLASHCARDS (300+) =====================
+const FLASHCARDS_RAW = [
+  // Fundamentals
+  {s:'Fundamentals',q:'What are the 5 steps of the nursing process?',a:'ADPIE: Assessment → Diagnosis → Planning → Implementation → Evaluation'},
+  {s:'Fundamentals',q:'What are the 9 Rights of medication administration?',a:'Right Patient, Drug, Dose, Route, Time, Documentation, Reason, Response, and Right to Refuse'},
+  {s:'Fundamentals',q:'Normal adult vital signs range',a:'Temp: 36.5–37.5°C | Pulse: 60–100 bpm | RR: 12–20/min | BP: <120/<80 mmHg | SpO₂: 95–100%'},
+  {s:'Fundamentals',q:'What is the dosage calculation formula?',a:'D/H × V = X (Desired dose ÷ Have on hand × Vehicle/mL)'},
+  {s:'Fundamentals',q:'What does PES stand for in a nursing diagnosis?',a:'Problem + Etiology + Signs/Symptoms (e.g., Impaired gas exchange related to [etiology] as evidenced by [AEB])'},
+  {s:'Fundamentals',q:'Difference between subjective and objective data',a:'Subjective = what patient SAYS/feels (symptoms). Objective = what nurse OBSERVES/measures (signs)'},
+  {s:'Fundamentals',q:'What are contact precautions?',a:'Gown and gloves required. For MRSA, C. diff, VRE, scabies. Private room preferred.'},
+  {s:'Fundamentals',q:'What are airborne precautions?',a:'N95 respirator required. Negative pressure room. For TB, measles, varicella, disseminated zoster.'},
+  {s:'Fundamentals',q:'What are droplet precautions?',a:'Surgical mask required. For influenza, meningococcal meningitis, pertussis, rubella.'},
+  {s:'Fundamentals',q:'What is the correct angle for intradermal injections?',a:'10–15 degrees. Forms a wheal. Used for TB skin tests and allergy testing.'},
+  {s:'Fundamentals',q:'What is the correct angle for subcutaneous injections?',a:'45–90 degrees depending on patient\'s body fat. Used for insulin and heparin.'},
+  {s:'Fundamentals',q:'What is the correct angle for intramuscular injections?',a:'90 degrees. Sites: deltoid, vastus lateralis, ventrogluteal.'},
+  {s:'Fundamentals',q:'What does the Z-track technique prevent?',a:'Prevents medication leakage into subcutaneous tissue and skin staining (e.g., iron dextran)'},
+  {s:'Fundamentals',q:'Normal capillary refill time',a:'Less than 2 seconds. Delayed (>3 sec) suggests poor peripheral perfusion.'},
+  {s:'Fundamentals',q:'What is the Braden Scale used for?',a:'Predicts pressure ulcer/injury risk. Scores 6 criteria (1–4 each): sensory, moisture, activity, mobility, nutrition, friction/shear. Score ≤18 = at risk.'},
+  {s:'Fundamentals',q:'Stages of pressure ulcer/injury',a:'Stage 1: non-blanchable erythema. Stage 2: partial thickness. Stage 3: full thickness. Stage 4: exposed bone/tendon. Unstageable. Deep tissue injury.'},
+  {s:'Fundamentals',q:'What is a SMART goal?',a:'Specific, Measurable, Achievable, Realistic/Relevant, Time-bound'},
+  {s:'Fundamentals',q:'IV flow rate formula (drops/min)',a:'Volume (mL) × Drop factor ÷ Time (min)'},
+  {s:'Fundamentals',q:'Normal urine output',a:'At least 30 mL/hour (adult). Oliguria = <30 mL/hr. Anuria = <100 mL/day.'},
+  {s:'Fundamentals',q:'What is therapeutic communication?',a:'Purposeful use of communication to promote patient well-being. Techniques: active listening, open-ended questions, silence, reflection, clarification.'},
+  {s:'Fundamentals',q:'Donning order for PPE',a:'Gown → Mask → Eye protection → Gloves'},
+  {s:'Fundamentals',q:'Doffing order for PPE',a:'Gloves → Eye protection → Gown → Mask (most contaminated removed first)'},
+  {s:'Fundamentals',q:'What is the Fowler\'s position?',a:'HOB 45–60°. High Fowler\'s = 90°. Used for respiratory distress, feeding, NG tube insertion.'},
+  {s:'Fundamentals',q:'What is Trendelenburg position?',a:'Body flat, feet elevated. DO NOT use for ICP or shock. Historically used for hypotension (now controversial).'},
+  {s:'Fundamentals',q:'Sims\' (semi-prone) position is used for:',a:'Enemas, perineal care, unconscious patients (prevents aspiration), rectal exams. Left lateral with top knee bent.'},
+  // Medical-Surgical
+  {s:'Medical-Surgical',q:'What is MONA for MI?',a:'Morphine (pain) → Oxygen → Nitrates (vasodilation) → Aspirin (antiplatelet)'},
+  {s:'Medical-Surgical',q:'ABG normal values',a:'pH: 7.35–7.45 | PaCO₂: 35–45 mmHg | HCO₃: 22–26 mEq/L | PaO₂: 80–100 mmHg'},
+  {s:'Medical-Surgical',q:'ROME rule for ABG',a:'Respiratory = Opposite (pH and CO₂ move in opposite directions). Metabolic = Equal (pH and HCO₃ move in same direction)'},
+  {s:'Medical-Surgical',q:'Signs of left vs right heart failure',a:'Left = pulmonary edema, dyspnea, crackles, orthopnea. Right = peripheral edema, JVD, hepatomegaly, ascites.'},
+  {s:'Medical-Surgical',q:'Cushing\'s Triad — sign of increased ICP',a:'Hypertension + Bradycardia + Irregular/slow respirations. LATE and OMINOUS sign.'},
+  {s:'Medical-Surgical',q:'Glasgow Coma Scale',a:'Eyes (4 max) + Verbal (5 max) + Motor (6 max) = 15 max. Coma = ≤8. Minimum = 3.'},
+  {s:'Medical-Surgical',q:'3 P\'s of diabetes mellitus',a:'Polyuria (excess urination), Polydipsia (excess thirst), Polyphagia (excess hunger)'},
+  {s:'Medical-Surgical',q:'DKA vs HHS comparison',a:'DKA: pH <7.3, ketones present, glucose >250 (Type 1 DM). HHS: pH >7.3, no ketones, glucose >600, severe dehydration (Type 2 DM).'},
+  {s:'Medical-Surgical',q:'Chvostek\'s and Trousseau\'s signs indicate',a:'Hypocalcemia. Chvostek\'s = facial twitch. Trousseau\'s = carpal spasm with BP cuff inflation.'},
+  {s:'Medical-Surgical',q:'Antidote for heparin overdose',a:'Protamine sulfate'},
+  {s:'Medical-Surgical',q:'Antidote for warfarin (Coumadin) overdose',a:'Vitamin K (phytonadione) | For life-threatening bleeding: Fresh Frozen Plasma (FFP)'},
+  {s:'Medical-Surgical',q:'Antidote for opioid overdose',a:'Naloxone (Narcan) — given IM, IV, or intranasal'},
+  {s:'Medical-Surgical',q:'Antidote for benzodiazepine overdose',a:'Flumazenil (Romazicon)'},
+  {s:'Medical-Surgical',q:'FAST for stroke recognition',a:'Face drooping | Arm weakness | Speech difficulty | Time to call emergency'},
+  {s:'Medical-Surgical',q:'6 P\'s of compartment syndrome',a:'Pain, Pressure, Pallor, Paresthesia, Paralysis, Pulselessness — surgical emergency, requires fasciotomy'},
+  {s:'Medical-Surgical',q:'TB medication: RIPE regimen',a:'Rifampicin + Isoniazid + Pyrazinamide + Ethambutol for 2 months, then R+I for 4 months'},
+  {s:'Medical-Surgical',q:'Signs of digoxin toxicity',a:'Bradycardia, N/V/A, yellow-green halos around lights, dysrhythmias. Hold if HR <60.'},
+  {s:'Medical-Surgical',q:'Hypokalemia signs',a:'Muscle weakness, cramps, constipation, flat T waves on ECG, dysrhythmias. K+ normal: 3.5–5.0 mEq/L'},
+  {s:'Medical-Surgical',q:'Hyperkalemia signs',a:'Peaked T waves, muscle weakness, cardiac arrest. Treat: calcium gluconate, sodium bicarbonate, insulin+dextrose, kayexalate, dialysis.'},
+  {s:'Medical-Surgical',q:'CKD diet restrictions',a:'Low potassium, low phosphorus, low sodium, controlled protein, fluid restriction based on urine output'},
+  {s:'Medical-Surgical',q:'AV fistula care instructions',a:'No BP, IV, or blood draws in fistula arm. Check for bruit and thrill (patent fistula). Loss = emergency.'},
+  {s:'Medical-Surgical',q:'Hip replacement precautions',a:'No hip flexion >90°, no adduction past midline, no internal rotation. Avoid low chairs and leaning forward.'},
+  {s:'Medical-Surgical',q:'Liver cirrhosis: hepatic encephalopathy treatment',a:'Lactulose (lower ammonia), rifaximin, low-protein diet. Precipitants: GI bleed, infection, high protein intake.'},
+  {s:'Medical-Surgical',q:'What is orthopnea?',a:'Dyspnea when lying flat. Patients need elevated HOB to breathe. Sign of heart failure (left) or COPD.'},
+  {s:'Medical-Surgical',q:'Pulmonary embolism signs',a:'Sudden dyspnea, pleuritic chest pain, tachycardia, hemoptysis, low O₂. Virchow\'s triad: stasis, hypercoagulability, vessel damage.'},
+  // Maternal & Child
+  {s:'Maternal',q:'Nagele\'s Rule for calculating EDC',a:'EDC = LMP + 9 months + 7 days (or: subtract 3 months, add 7 days, add 1 year)'},
+  {s:'Maternal',q:'APGAR scoring criteria',a:'Appearance (color), Pulse (HR), Grimace (reflex), Activity (tone), Respiration. 0–2 per category. 7–10 = normal. 4–6 = moderate depression.'},
+  {s:'Maternal',q:'4 stages of labor',a:'Stage 1: Dilation (0–10 cm). Stage 2: Expulsion (10 cm to delivery). Stage 3: Placenta delivery. Stage 4: Recovery (1–4 hrs postpartum)'},
+  {s:'Maternal',q:'Signs of TRUE vs FALSE labor',a:'True labor: regular contractions strengthening, cervical change (dilation/effacement), bloody show, walking increases contractions. False: irregular, no cervical change.'},
+  {s:'Maternal',q:'LATCH breastfeeding score',a:'Latch, Audible swallowing, Type of nipple, Comfort, Hold/positioning. Score 8–10 = successful breastfeeding.'},
+  {s:'Maternal',q:'Physiologic vs Pathologic jaundice in newborns',a:'Physiologic: appears after 24 hrs, peaks day 3–5, resolves week 2. Pathologic: appears WITHIN 24 hrs, requires treatment (phototherapy, exchange transfusion).'},
+  {s:'Maternal',q:'RhoGAM administration schedule',a:'At 28 weeks AND within 72 hours after delivery of Rh+ baby. Also after amniocentesis, ectopic, or miscarriage.'},
+  {s:'Maternal',q:'MgSO₄ toxicity signs (order of appearance)',a:'First: loss of deep tendon reflexes (DTRs) → Respiratory depression → Cardiac arrest. Antidote: Calcium gluconate.'},
+  {s:'Maternal',q:'Placenta previa vs Abruptio placentae',a:'Previa: painless bright red bleeding, soft uterus. Abruption: painful dark red bleeding, rigid board-like uterus, concealed hemorrhage.'},
+  {s:'Maternal',q:'Caput succedaneum vs Cephalhematoma',a:'Caput: crosses suture lines, diffuse, present at birth. Cephalh: does NOT cross sutures, subperiosteal, may cause hyperbilirubinemia.'},
+  {s:'Maternal',q:'Developmental milestones — 2 months',a:'Smiles socially, coos, follows objects to midline, holds head up briefly when prone.'},
+  {s:'Maternal',q:'Developmental milestones — 6 months',a:'Sits with support, rolls over, babbles, transfers objects, stranger anxiety begins.'},
+  {s:'Maternal',q:'Developmental milestones — 12 months',a:'Walks with support/cruising, says "mama/dada" meaningfully, pincer grasp, 3 words, peek-a-boo.'},
+  {s:'Maternal',q:'Developmental milestones — 18 months',a:'Walks independently, 10–15 words, stacks 2–3 cubes, feeds self with spoon, says "no."'},
+  {s:'Maternal',q:'Developmental milestones — 2 years',a:'Runs, 50+ words, 2-word phrases, kicks ball, parallel play, tantrums (autonomy vs shame).'},
+  {s:'Maternal',q:'Developmental milestones — 3 years',a:'Tricycle, 3–4 word sentences, draws circle, cooperative play, washes hands, takes turns.'},
+  {s:'Maternal',q:'Immunizations at birth (Philippine EPI)',a:'BCG (TB prevention) and Hepatitis B vaccine (first dose)'},
+  {s:'Maternal',q:'What does APGAR score of 0–3 indicate?',a:'Severe depression — requires immediate resuscitation. Begin CPR and prepare for NICU admission.'},
+  {s:'Maternal',q:'Post-partum blues vs postpartum depression',a:'Blues: mild tearfulness day 3–5, resolves in 2 weeks. PPD: persistent depression >2 weeks, requires psychiatric intervention.'},
+  {s:'Maternal',q:'What is lochia rubra, serosa, and alba?',a:'Rubra: bright red, days 1–3. Serosa: pink-brown, days 4–10. Alba: white/yellow, days 11–21. Return of rubra after lightening = abnormal.'},
+  // Psychiatric
+  {s:'Psychiatric',q:'Maslow\'s hierarchy of needs (bottom to top)',a:'Physiological → Safety → Love/Belonging → Esteem → Self-Actualization'},
+  {s:'Psychiatric',q:'DIGFAST mnemonic for mania',a:'Distractibility, Irresponsibility, Grandiosity, Flight of ideas, Activity increased, Sleep decreased, Talkativeness'},
+  {s:'Psychiatric',q:'SIG E CAPS for depression',a:'Sleep, Interest (lost), Guilt, Energy (low), Concentration, Appetite, Psychomotor changes, Suicidal ideation'},
+  {s:'Psychiatric',q:'Defense mechanisms — Projection',a:'Attributing one\'s own unacceptable thoughts/feelings to others ("Everyone hates me")'},
+  {s:'Psychiatric',q:'Defense mechanisms — Rationalization',a:'Making up logical/acceptable reasons for unacceptable behavior to protect self-esteem'},
+  {s:'Psychiatric',q:'Defense mechanisms — Sublimation',a:'Redirecting unacceptable impulses into socially acceptable behavior (e.g., aggression → sports)'},
+  {s:'Psychiatric',q:'Defense mechanisms — Regression',a:'Reverting to earlier, less mature behavior patterns under stress (e.g., adult throwing tantrum)'},
+  {s:'Psychiatric',q:'Defense mechanisms — Denial',a:'Refusing to acknowledge painful realities or implications of a situation'},
+  {s:'Psychiatric',q:'Defense mechanisms — Displacement',a:'Redirecting emotions (usually anger) from original source to a safer substitute'},
+  {s:'Psychiatric',q:'Schizophrenia — positive vs negative symptoms',a:'Positive (added): hallucinations, delusions, disorganized thinking. Negative (lost): flat affect, alogia, avolition, anhedonia.'},
+  {s:'Psychiatric',q:'Cluster A personality disorders',a:'Paranoid, Schizoid, Schizotypal — "Weird": odd, eccentric behavior, social isolation'},
+  {s:'Psychiatric',q:'Cluster B personality disorders',a:'Antisocial, Borderline, Histrionic, Narcissistic — "Wild": dramatic, emotional, erratic'},
+  {s:'Psychiatric',q:'Cluster C personality disorders',a:'Avoidant, Dependent, Obsessive-Compulsive PD — "Worried": anxious, fearful'},
+  {s:'Psychiatric',q:'Extrapyramidal side effects (EPS) of antipsychotics',a:'Akathisia (restlessness), Acute dystonia (muscle spasms), Pseudoparkinsonism, Tardive dyskinesia (late involuntary movements)'},
+  {s:'Psychiatric',q:'Neuroleptic Malignant Syndrome (NMS) treatment',a:'Discontinue antipsychotic immediately. Dantrolene (muscle relaxant), bromocriptine (dopamine agonist), cooling measures, supportive care.'},
+  {s:'Psychiatric',q:'Lithium: therapeutic vs toxic levels',a:'Therapeutic: 0.6–1.2 mEq/L. Toxic: >1.5 mEq/L. Narrow therapeutic index. Monitor levels regularly.'},
+  {s:'Psychiatric',q:'Alcohol withdrawal timeline',a:'6–12 hrs: anxiety, tremors. 12–24 hrs: seizures risk. 24–48 hrs: hallucinations. 48–72 hrs: delirium tremens (DTs) — most severe.'},
+  {s:'Psychiatric',q:'Therapeutic vs non-therapeutic communication examples',a:'Therapeutic: open questions, reflection, silence. Non-therapeutic: giving advice, false reassurance, changing subject, why questions.'},
+  {s:'Psychiatric',q:'Sundowning in dementia',a:'Increased confusion, agitation in late afternoon/evening. Manage: maintain routine, adequate lighting, orient patient, reduce stimulation.'},
+  {s:'Psychiatric',q:'PTSD triad of symptoms',a:'Re-experiencing (flashbacks/nightmares), Avoidance, Hyperarousal (startles easily, insomnia, irritability)'},
+  // Community Health
+  {s:'Community',q:'Chain of infection (all 6 links)',a:'Infectious Agent → Reservoir → Portal of Exit → Mode of Transmission → Portal of Entry → Susceptible Host'},
+  {s:'Community',q:'Three levels of prevention',a:'Primary: prevent disease (vaccines, health education). Secondary: early detection (screening). Tertiary: limit disability (rehabilitation).'},
+  {s:'Community',q:'Epidemiologic triad',a:'Host (susceptible person) + Agent (causative organism/factor) + Environment (conditions supporting transmission)'},
+  {s:'Community',q:'Incidence vs Prevalence',a:'Incidence = NEW cases in a period. Prevalence = ALL existing cases at a point in time.'},
+  {s:'Community',q:'Philippine EPI vaccines at 6 weeks',a:'DTwP-HepB-Hib (pentavalent), OPV (oral polio), IPV (inactivated polio), PCV (pneumococcal). Repeat at 10 and 14 weeks.'},
+  {s:'Community',q:'Bag technique in community health nursing',a:'Line bag with clean paper, perform handwashing (before and after patient contact), do not contaminate bag interior.'},
+  {s:'Community',q:'RA 7600 — Rooming-In and Breastfeeding Act',a:'Requires hospitals to implement rooming-in, promotes exclusive breastfeeding for first 6 months, prohibits promotion of breast milk substitutes.'},
+  {s:'Community',q:'DOT for TB (Directly Observed Therapy)',a:'Health worker watches patient swallow each dose. Most effective strategy to ensure TB treatment compliance and prevent drug resistance.'},
+  {s:'Community',q:'Maternal Mortality Rate formula',a:'(Maternal deaths ÷ Live births) × 100,000'},
+  {s:'Community',q:'Case Fatality Rate formula',a:'(Deaths from specific disease ÷ Total cases of that disease) × 100'},
+  {s:'Community',q:'PhilHealth — RA 7875',a:'National Health Insurance Act. PhilHealth provides social health insurance coverage to all Filipinos.'},
+  {s:'Community',q:'COPAR in community health nursing',a:'Community Organizing and Participatory Action Research — process of mobilizing communities to identify and solve their own health problems.'},
+  {s:'Community',q:'Herd immunity threshold for measles',a:'~95% of population must be immune. Measles is highly contagious (R₀ = 12–18). Vaccination is the primary strategy.'},
+  {s:'Community',q:'Vector-borne diseases in the Philippines',a:'Dengue (Aedes aegypti), Malaria (Anopheles), Filariasis (Culex). Control: eliminate breeding sites, insecticide, bed nets.'},
+  // Leadership
+  {s:'Leadership',q:'POSDCORB management functions',a:'Planning, Organizing, Staffing, Directing, Coordinating, Reporting, Budgeting'},
+  {s:'Leadership',q:'Five Rights of Delegation',a:'Right Task, Right Circumstance, Right Person, Right Direction/Communication, Right Supervision'},
+  {s:'Leadership',q:'Types of nursing care delivery models',a:'Functional (task), Team (group), Primary (individual patient assignment), Case management, Total patient care'},
+  {s:'Leadership',q:'PDCA quality improvement cycle',a:'Plan (identify problem) → Do (implement) → Check (evaluate) → Act (standardize/revise)'},
+  {s:'Leadership',q:'RA 9173 — Philippine Nursing Act 2002',a:'Governs nursing practice. Administered by Board of Nursing (BON) under PRC. Requires CPD for license renewal. Defines scope of practice.'},
+  {s:'Leadership',q:'Elements of nursing negligence/malpractice',a:'4 D\'s: Duty (professional relationship) → Dereliction (breach of duty) → Direct causation → Damages (harm resulted)'},
+  {s:'Leadership',q:'Incident report purpose',a:'Documents adverse events for quality improvement (NOT punishment). Does not go in the medical record. Report factually without blame.'},
+  {s:'Leadership',q:'SBAR communication framework',a:'Situation → Background → Assessment → Recommendation. Standard for nurse-to-physician and handoff communication.'},
+  {s:'Leadership',q:'Informed consent requires',a:'Patient must be: (1) adequately informed (risks, benefits, alternatives), (2) able to comprehend, (3) acting voluntarily (no coercion)'},
+  {s:'Leadership',q:'SMART goal criteria',a:'Specific, Measurable, Achievable, Realistic/Relevant, Time-bound'},
+  {s:'Leadership',q:'Conflict resolution strategies',a:'Avoidance, Accommodation, Competition, Compromise, Collaboration (WIN-WIN — best for team environment)'},
+  {s:'Leadership',q:'Leadership styles comparison',a:'Autocratic: best for crisis. Democratic: best for decisions. Laissez-faire: best for highly skilled autonomous teams. Transformational: motivates change.'},
+];
+
+// ===================== MOTIVATIONAL QUOTES =====================
+const MOTIVATIONS = [
+  {q:'Nursing is an art: and if it is to be made an art, it requires an exclusive devotion as hard a preparation, as any painter\'s or sculptor\'s work.',a:'Florence Nightingale'},
+  {q:'You passed 4 years of nursing school. You studied, sleepless nights, clinical days, countless exams. The NLE is just one more step in your journey. You\'ve already proven you can do this.',a:'Believe in your preparation'},
+  {q:'The secret of getting ahead is getting started.',a:'Mark Twain'},
+  {q:'Success is not final, failure is not fatal: it is the courage to continue that counts.',a:'Winston Churchill'},
+  {q:'The harder you work for something, the greater you\'ll feel when you achieve it.',a:'Anonymous'},
+  {q:'Every expert was once a beginner. Every professional was once an amateur.',a:'Robin Sharma'},
+  {q:'Believe you can and you\'re halfway there.',a:'Theodore Roosevelt'},
+  {q:'Don\'t watch the clock; do what it does. Keep going.',a:'Sam Levenson'},
+  {q:'The best nurses are the ones who chose nursing not for the title, but for the calling.',a:'Anonymous'},
+  {q:'August 29-30, 2026 is not just an exam — it is the day you step forward into your future as a Registered Nurse. You are ready.',a:'Your Review Companion'},
+  {q:'The difference between ordinary and extraordinary is that little extra.',a:'Jimmy Johnson'},
+  {q:'Your future patients need you. Study hard, rest well, and pass that exam.',a:'Anonymous'},
+  {q:'It always seems impossible until it\'s done.',a:'Nelson Mandela'},
+  {q:'Nursing is not for the faint-hearted but for those who are heart-strong.',a:'Anonymous'},
+  {q:'Every answer you got right today is one step closer to RN after your name.',a:'Your Review Companion'},
+  {q:'Difficulties in life are intended to make us better, not bitter.',a:'Dan Reeves'},
+  {q:'The PNLE is not a measure of how smart you are. It is a measure of how well you prepared.',a:'Anonymous'},
+  {q:'You have been given a gift — the ability to heal, comfort, and care. The license will only make it official.',a:'Your Review Companion'},
+  {q:'When you feel like quitting, remember why you started. You chose nursing to make a difference.',a:'Anonymous'},
+  {q:'Rest if you must, but don\'t quit.',a:'Edgar Guest'},
+];
+
+// ===================== STATE =====================
+let selectedSubject = 'All';
+let quizQuestions = [], currentQ = 0, score = 0, wrongAnswers = [], answered = false;
+let scoreHistory = [];
+let mockQuestions = [], mockIdx = 0, mockAnswers = [], mockTimer = null, mockSecondsLeft = 0, mockMode = 'full';
+let fcCards = [], fcIdx = 0, fcMode = 'flip', fcSubj = 'All', isFlipped = false;
+let motivationIdx = 0;
+
+// ===================== NAVIGATION =====================
+function showPage(id, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('visible'));
+  document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('visible');
+  if(btn) btn.classList.add('active');
+}
+
+// ===================== QUIZ =====================
+function setSubj(s, btn) {
+  selectedSubject = s;
+  document.querySelectorAll('#subj-picker .spill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+function getPool(subj) {
+  return subj === 'All' ? ALL_QUESTIONS : ALL_QUESTIONS.filter(q => q.s === subj);
+}
+
+function beginQuiz() {
+  const pool = getPool(selectedSubject);
+  if(pool.length < 5) { alert('Not enough questions. Choose a different filter.'); return; }
+  const count = Math.min(parseInt(document.getElementById('q-count').value), pool.length);
+  quizQuestions = shuffle([...pool]).slice(0, count);
+  currentQ = 0; score = 0; wrongAnswers = [];
+  document.getElementById('quiz-setup').style.display = 'none';
+  document.getElementById('score-history-card').style.display = 'none';
+  document.getElementById('quiz-result').style.display = 'none';
+  document.getElementById('quiz-active').style.display = 'block';
+  renderQuestion();
+}
+
+function renderQuestion() {
+  answered = false;
+  const q = quizQuestions[currentQ];
+  const total = quizQuestions.length;
+  document.getElementById('q-counter').textContent = `Question ${currentQ+1} of ${total}`;
+  document.getElementById('q-score-live').textContent = `Score: ${score}/${currentQ}`;
+  document.getElementById('qp-fill').style.width = `${(currentQ/total)*100}%`;
+  document.getElementById('q-tag').textContent = q.s;
+  document.getElementById('q-text').textContent = q.q;
+  document.getElementById('q-expl').classList.remove('show');
+  document.getElementById('q-next').style.display = 'none';
+  document.getElementById('q-skip').style.display = 'inline-flex';
+  const opts = document.getElementById('q-opts');
+  opts.innerHTML = '';
+  q.o.forEach((opt, i) => {
+    const div = document.createElement('div');
+    div.className = 'q-opt';
+    div.innerHTML = `<span class="ol">${String.fromCharCode(65+i)}</span><span>${opt}</span>`;
+    div.onclick = () => selectAnswer(i, div);
+    opts.appendChild(div);
+  });
+}
+
+function selectAnswer(idx, div) {
+  if(answered) return;
+  answered = true;
+  const q = quizQuestions[currentQ];
+  document.querySelectorAll('.q-opt').forEach((o,i) => {
+    o.onclick = null;
+    if(i === q.a) o.classList.add('correct');
+  });
+  if(idx === q.a) { score++; div.classList.add('correct'); }
+  else { div.classList.add('wrong'); wrongAnswers.push(q); }
+  const expl = document.getElementById('q-expl');
+  expl.textContent = '💡 ' + q.e;
+  expl.classList.add('show');
+  document.getElementById('q-next').style.display = 'inline-flex';
+  document.getElementById('q-skip').style.display = 'none';
+}
+
+function skipQuestion() { wrongAnswers.push(quizQuestions[currentQ]); nextQuestion(); }
+
+function nextQuestion() {
+  currentQ++;
+  if(currentQ >= quizQuestions.length) { showQuizResult(); return; }
+  renderQuestion();
+}
+
+function showQuizResult() {
+  document.getElementById('quiz-active').style.display = 'none';
+  document.getElementById('quiz-result').style.display = 'block';
+  const pct = Math.round((score/quizQuestions.length)*100);
+  document.getElementById('r-score').textContent = pct + '%';
+  const circle = document.getElementById('r-circle');
+  circle.style.borderColor = pct >= 75 ? '#0d9373' : pct >= 60 ? '#c8860a' : '#c0392b';
+  circle.querySelector('.rv').style.color = circle.style.borderColor;
+  document.getElementById('r-msg').textContent = pct >= 75 ? '🎉 Passing Grade!' : pct >= 60 ? '📚 Almost There — Keep Reviewing!' : '💪 Don\'t Give Up — Review and Retry!';
+  document.getElementById('r-detail').textContent = `You answered ${score} of ${quizQuestions.length} correctly (${pct}%). Passing is 75%.`;
+  scoreHistory.unshift({date: new Date().toLocaleDateString('en-PH'), subj: selectedSubject, score: pct, correct: score, total: quizQuestions.length});
+  if(scoreHistory.length > 10) scoreHistory.pop();
+  updateScoreHistory();
+  const wl = document.getElementById('r-wrong-list');
+  if(wrongAnswers.length === 0) {
+    wl.innerHTML = '<p style="font-size:13px;color:var(--teal);font-weight:500">🎯 Perfect score! No missed questions.</p>';
+  } else {
+    wl.innerHTML = wrongAnswers.slice(0,6).map(q => `
+      <div style="padding:12px 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:12px;color:var(--muted);margin-bottom:4px">${q.s}</div>
+        <div style="font-size:13px;margin-bottom:6px">${q.q}</div>
+        <div style="font-size:12px;color:var(--teal)">✓ ${q.o[q.a]}</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:3px">${q.e}</div>
+      </div>
+    `).join('') + (wrongAnswers.length > 6 ? `<p style="font-size:12px;color:var(--muted);margin-top:8px">+${wrongAnswers.length-6} more missed.</p>` : '');
+  }
+}
+
+function retryQuiz() {
+  currentQ = 0; score = 0; wrongAnswers = [];
+  quizQuestions = shuffle([...quizQuestions]);
+  document.getElementById('quiz-result').style.display = 'none';
+  document.getElementById('quiz-active').style.display = 'block';
+  renderQuestion();
+}
+
+function resetQuiz() {
+  document.getElementById('quiz-setup').style.display = 'block';
+  document.getElementById('score-history-card').style.display = 'block';
+  document.getElementById('quiz-active').style.display = 'none';
+  document.getElementById('quiz-result').style.display = 'none';
+  updateScoreHistory();
+}
+
+function updateScoreHistory() {
+  const containers = ['score-history-list','quiz-score-history'];
+  const html = scoreHistory.length === 0 ? '<p style="font-size:13px;color:var(--muted)">No quiz history yet.</p>' :
+    scoreHistory.map(h => {
+      const c = h.score >= 75 ? 'badge-green' : h.score >= 60 ? 'badge-amber' : 'badge-red';
+      return `<div class="score-row"><span class="score-badge badge ${c}">${h.score}%</span><span style="flex:1;font-size:13px">${h.subj} (${h.correct}/${h.total})</span><span style="font-size:12px;color:var(--muted)">${h.date}</span></div>`;
+    }).join('');
+  containers.forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.innerHTML = html;
+  });
+  // Update home progress
+  if(scoreHistory.length > 0) {
+    const avg = Math.round(scoreHistory.reduce((s,h)=>s+h.score,0)/scoreHistory.length);
+    const best = Math.max(...scoreHistory.map(h=>h.score));
+    document.getElementById('progress-summary').innerHTML = `
+      <div class="grid2" style="gap:10px">
+        <div style="background:var(--bg);border-radius:8px;padding:12px;text-align:center"><div style="font-size:22px;font-weight:600;color:var(--blue)">${avg}%</div><div style="font-size:12px;color:var(--muted)">Average Score</div></div>
+        <div style="background:var(--bg);border-radius:8px;padding:12px;text-align:center"><div style="font-size:22px;font-weight:600;color:var(--teal)">${best}%</div><div style="font-size:12px;color:var(--muted)">Best Score</div></div>
+      </div>
+      <p style="font-size:12px;color:var(--muted);margin-top:10px">${scoreHistory.length} quiz(zes) completed.</p>`;
+  }
+}
+
+// ===================== MOCK EXAM =====================
+const MOCK_SUBJECTS = ['Fundamentals','Maternal','Medical-Surgical','Medical-Surgical','Psychiatric','Leadership'];
+const MOCK_SUBJECT_LABELS = ['Fundamentals of Nursing','Community Health + Maternal & Child','Medical-Surgical Nursing 1','Medical-Surgical Nursing 2','Psychiatric Nursing','Leadership, Management & Jurisprudence'];
+
+function startMockExam(mode) {
+  mockMode = mode;
+  document.getElementById('mock-setup').style.display = 'none';
+  document.getElementById('mock-result').style.display = 'none';
+  document.getElementById('mock-active').style.display = 'block';
+
+  let subjects = mode === 'full' ? ['All','All','All','All','All','All'] :
+                  mode === 'day1' ? ['Fundamentals','Community','Medical-Surgical'] :
+                  ['Medical-Surgical','Psychiatric','Leadership'];
+
+  mockQuestions = [];
+  if(mode === 'full') {
+    ['Fundamentals','Community','Medical-Surgical','Medical-Surgical','Psychiatric','Leadership'].forEach(s => {
+      const pool = getPool(s);
+      mockQuestions.push(...shuffle([...pool]).slice(0,85));
+    });
+  } else if(mode === 'day1') {
+    ['Fundamentals','Community','Medical-Surgical'].forEach(s => {
+      const pool = getPool(s);
+      mockQuestions.push(...shuffle([...pool]).slice(0,85));
+    });
+  } else {
+    ['Medical-Surgical','Psychiatric','Leadership'].forEach(s => {
+      const pool = getPool(s);
+      mockQuestions.push(...shuffle([...pool]).slice(0,85));
+    });
+  }
+  mockQuestions = mockQuestions.slice(0, mode === 'full' ? 510 : 255);
+  mockAnswers = new Array(mockQuestions.length).fill(-1);
+  mockIdx = 0;
+  mockSecondsLeft = mode === 'full' ? 7200 * 6 : 7200 * 3;
+  clearInterval(mockTimer);
+  mockTimer = setInterval(() => {
+    mockSecondsLeft--;
+    updateMockTimer();
+    if(mockSecondsLeft <= 0) endMockExam();
+  }, 1000);
+  renderMockQuestion();
+}
+
+function updateMockTimer() {
+  const h = Math.floor(mockSecondsLeft/3600);
+  const m = Math.floor((mockSecondsLeft%3600)/60);
+  const s = mockSecondsLeft%60;
+  document.getElementById('mock-timer').textContent = `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+
+function renderMockQuestion() {
+  const q = mockQuestions[mockIdx];
+  const total = mockQuestions.length;
+  const subjIdx = Math.floor(mockIdx / 85);
+  const localIdx = mockIdx % 85;
+  const subjName = MOCK_SUBJECT_LABELS[subjIdx] || q.s;
+  document.getElementById('mock-subj-label').textContent = `Subject ${subjIdx+1}: ${subjName}`;
+  document.getElementById('mock-progress-text').textContent = `Item ${mockIdx+1} of ${total} (Subject item ${localIdx+1}/85)`;
+  document.getElementById('mock-qp-fill').style.width = `${((mockIdx)/total)*100}%`;
+  document.getElementById('mock-q-tag').textContent = q.s;
+  document.getElementById('mock-item-num').textContent = `#${mockIdx+1}`;
+  document.getElementById('mock-q-text').textContent = q.q;
+  document.getElementById('mock-q-expl').classList.remove('show');
+  document.getElementById('mock-prev').style.display = mockIdx > 0 ? 'inline-flex' : 'none';
+  document.getElementById('mock-next').textContent = mockIdx === mockQuestions.length-1 ? '✓ Submit Exam' : 'Next →';
+  document.getElementById('mock-next').onclick = mockIdx === mockQuestions.length-1 ? () => confirmEndMock() : () => mockNext();
+  const opts = document.getElementById('mock-q-opts');
+  opts.innerHTML = '';
+  q.o.forEach((opt, i) => {
+    const div = document.createElement('div');
+    div.className = 'q-opt' + (mockAnswers[mockIdx] === i ? ' selected' : '');
+    div.innerHTML = `<span class="ol">${String.fromCharCode(65+i)}</span><span>${opt}</span>`;
+    div.onclick = () => {
+      mockAnswers[mockIdx] = i;
+      document.querySelectorAll('#mock-q-opts .q-opt').forEach((o,j) => {
+        o.classList.toggle('selected', j === i);
+      });
+    };
+    opts.appendChild(div);
+  });
+}
+
+function mockNext() {
+  if(mockIdx < mockQuestions.length-1) { mockIdx++; renderMockQuestion(); }
+}
+
+function mockPrev() {
+  if(mockIdx > 0) { mockIdx--; renderMockQuestion(); }
+}
+
+function confirmEndMock() {
+  document.getElementById('confirm-modal').classList.add('open');
+}
+
+function endMockExam() {
+  clearInterval(mockTimer);
+  document.getElementById('confirm-modal').classList.remove('open');
+  document.getElementById('mock-active').style.display = 'none';
+  document.getElementById('mock-result').style.display = 'block';
+  // Calculate results
+  let totalCorrect = 0;
+  const subjectResults = {};
+  mockQuestions.forEach((q, i) => {
+    const subj = q.s;
+    if(!subjectResults[subj]) subjectResults[subj] = {correct:0, total:0};
+    subjectResults[subj].total++;
+    if(mockAnswers[i] === q.a) { totalCorrect++; subjectResults[subj].correct++; }
+  });
+  const totalPct = Math.round((totalCorrect/mockQuestions.length)*100);
+  const passed = totalPct >= 75 && Object.values(subjectResults).every(r => Math.round((r.correct/r.total)*100) >= 60);
+  document.getElementById('mock-result-content').innerHTML = `
+    <div style="font-size:60px;margin-bottom:10px">${passed ? '🎉' : '📚'}</div>
+    <div style="font-size:40px;font-weight:700;color:${passed ? '#0d9373' : '#c0392b'}">${totalPct}%</div>
+    <div style="font-size:16px;color:var(--muted);margin-bottom:8px">${totalCorrect} of ${mockQuestions.length} correct</div>
+    <div style="font-size:18px;font-weight:600;color:${passed ? '#0d9373' : '#c0392b'}">${passed ? '✅ PASSED — Congratulations!' : '❌ Not Yet — Keep Reviewing!'}</div>
+  `;
+  let breakdownHtml = '<div class="section-tag">Subject Breakdown</div><table class="req-table"><thead><tr><th>Subject</th><th>Score</th><th>%</th><th>Status</th></tr></thead><tbody>';
+  Object.entries(subjectResults).forEach(([s, r]) => {
+    const pct = Math.round((r.correct/r.total)*100);
+    const status = pct >= 75 ? '<span class="badge badge-green">Pass</span>' : pct >= 60 ? '<span class="badge badge-amber">Borderline</span>' : '<span class="badge badge-red">Fail</span>';
+    breakdownHtml += `<tr><td>${s}</td><td>${r.correct}/${r.total}</td><td>${pct}%</td><td>${status}</td></tr>`;
+  });
+  breakdownHtml += '</tbody></table>';
+  document.getElementById('mock-breakdown').innerHTML = breakdownHtml;
+}
+
+// ===================== FLASHCARDS =====================
+function setFcSubj(s, btn) {
+  fcSubj = s;
+  document.querySelectorAll('#fc-subj-picker .spill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  loadFlashcards();
+}
+
+function setFcMode(mode, btn) {
+  fcMode = mode;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('fc-flip-mode').style.display = mode === 'flip' ? 'block' : 'none';
+  document.getElementById('fc-qa-mode').style.display = mode === 'qa' ? 'block' : 'none';
+  loadFlashcards();
+}
+
+function loadFlashcards() {
+  fcCards = fcSubj === 'All' ? [...FLASHCARDS_RAW] : FLASHCARDS_RAW.filter(c => c.s === fcSubj);
+  fcCards = shuffle([...fcCards]);
+  fcIdx = 0;
+  isFlipped = false;
+  if(fcMode === 'flip') renderFlipCard();
+  else renderQaCard();
+}
+
+function renderFlipCard() {
+  if(!fcCards.length) return;
+  const c = fcCards[fcIdx];
+  document.getElementById('fc-front-subject').textContent = c.s;
+  document.getElementById('fc-front-q').textContent = c.q;
+  document.getElementById('fc-back-a').textContent = c.a;
+  document.getElementById('fc-counter').textContent = `${fcIdx+1} / ${fcCards.length}`;
+  document.getElementById('fc-progress-fill').style.width = `${((fcIdx+1)/fcCards.length)*100}%`;
+  // Reset flip
+  isFlipped = false;
+  document.getElementById('fc-card').classList.remove('flipped');
+}
+
+function flipCard() {
+  isFlipped = !isFlipped;
+  document.getElementById('fc-card').classList.toggle('flipped', isFlipped);
+}
+
+function fcPrev() {
+  if(fcIdx > 0) { fcIdx--; renderFlipCard(); }
+}
+function fcNext() {
+  if(fcIdx < fcCards.length-1) { fcIdx++; renderFlipCard(); }
+  else { alert('🎉 You\'ve reviewed all flashcards in this set!'); }
+}
+
+function shuffleFlashcards() {
+  fcCards = shuffle([...fcCards]);
+  fcIdx = 0;
+  if(fcMode === 'flip') renderFlipCard();
+  else renderQaCard();
+}
+
+function renderQaCard() {
+  if(!fcCards.length) return;
+  const c = fcCards[fcIdx];
+  document.getElementById('fc-qa-subject').textContent = c.s;
+  document.getElementById('fc-qa-q').textContent = c.q;
+  document.getElementById('fc-qa-answer').textContent = c.a;
+  document.getElementById('fc-qa-answer').style.display = 'none';
+  document.getElementById('fc-reveal-btn').style.display = 'inline-flex';
+  document.getElementById('fc-qa-counter').textContent = `${fcIdx+1} / ${fcCards.length}`;
+  document.getElementById('fc-qa-progress-fill').style.width = `${((fcIdx+1)/fcCards.length)*100}%`;
+}
+
+function revealFcAnswer() {
+  document.getElementById('fc-qa-answer').style.display = 'block';
+  document.getElementById('fc-reveal-btn').style.display = 'none';
+}
+
+function fcQaPrev() {
+  if(fcIdx > 0) { fcIdx--; renderQaCard(); }
+}
+function fcQaNext() {
+  if(fcIdx < fcCards.length-1) { fcIdx++; renderQaCard(); }
+  else { alert('🎉 All cards reviewed!'); }
+}
+
+// ===================== TIPS TABS =====================
+function showTipTab(tab, btn) {
+  document.querySelectorAll('[id^="tip-"]').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('#tips .tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tip-' + tab).classList.add('active');
+  btn.classList.add('active');
+}
+
+function shuffleMotivation() {
+  motivationIdx = Math.floor(Math.random() * MOTIVATIONS.length);
+  renderMotivation();
+}
+
+function renderMotivation() {
+  const container = document.getElementById('motivation-cards');
+  const count = 4;
+  const shuffled = shuffle([...MOTIVATIONS]).slice(0, count);
+  container.innerHTML = shuffled.map(m => `
+    <div class="quote-card">
+      <div class="quote-text">"${m.q}"</div>
+      <div class="quote-author">— ${m.a}</div>
+    </div>
+  `).join('');
+}
+
+// Home motivation banner
+function renderDailyMotivation() {
+  const m = MOTIVATIONS[Math.floor(Math.random() * MOTIVATIONS.length)];
+  document.getElementById('daily-motivation').innerHTML = `
+    <div class="mb-quote">"${m.q}"</div>
+    <div class="mb-author">— ${m.a}</div>
+  `;
+}
+
+// ===================== COUNTDOWN =====================
+function updateCountdown() {
+  const exam = new Date('2026-08-29T07:00:00');
+  const now = new Date();
+  const diff = exam - now;
+  const ids = [['cd-days','cd-hours','cd-mins','cd-secs'],['ei-cd-days','ei-cd-hours','ei-cd-mins','ei-cd-secs']];
+  if(diff < 0) {
+    ids.forEach(([d,h,m,s]) => {
+      const el = document.getElementById(d);
+      if(el) el.parentElement.parentElement.innerHTML = '<span style="color:#7ec8f4;font-size:16px;font-weight:600">Exam Day is here! You\'ve got this! 🎉</span>';
+    });
+    return;
+  }
+  const days = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+  const mins = Math.floor((diff % 3600000) / 60000);
+  const secs = Math.floor((diff % 60000) / 1000);
+  ids.forEach(([d,h,m,s]) => {
+    const de = document.getElementById(d);
+    const he = document.getElementById(h);
+    const me = document.getElementById(m);
+    const se = document.getElementById(s);
+    if(de) de.textContent = days;
+    if(he) he.textContent = String(hours).padStart(2,'0');
+    if(me) me.textContent = String(mins).padStart(2,'0');
+    if(se) se.textContent = String(secs).padStart(2,'0');
+  });
+}
+
+// ===================== UTILS =====================
+function shuffle(arr) {
+  for(let i = arr.length-1; i>0; i--) {
+    const j = Math.floor(Math.random()*(i+1));
+    [arr[i],arr[j]] = [arr[j],arr[i]];
+  }
+  return arr;
+}
+
+// ===================== INIT =====================
+document.addEventListener('DOMContentLoaded', () => {
+  loadFlashcards();
+  renderDailyMotivation();
+  renderMotivation();
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+});
+</script>
+</body>
+</html>
